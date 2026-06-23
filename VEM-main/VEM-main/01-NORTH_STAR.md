@@ -16,7 +16,7 @@ Retrabalho e atraso no atendimento
 # 👥 3. Público-Alvo (As Personas)
 Persona	Descrição
 Ana Clara Lima (Responsável pela Farmácia)	Profissional que gerencia o estoque. Precisa cadastrar medicamentos e atualizar status rapidamente.
-Mariana (Enfermeira da UBS)	Precisa consultar se o medicamento prescrito está disponível antes de atender o paciente.
+Consultor (Enfermeira da UBS)	Precisa consultar se o medicamento prescrito está disponível antes de atender o paciente.
 Dr. Ricardo (Médico da UBS)	Quer saber se o medicamento que vai prescrever tem estoque disponível.
 João (Gestor Municipal de Saúde)	Precisa de visibilidade geral sobre a situação dos medicamentos em cada UBS do município.
 

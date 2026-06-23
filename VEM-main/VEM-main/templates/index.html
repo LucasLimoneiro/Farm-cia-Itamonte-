@@ -3,13 +3,16 @@
 {% block title %}Painel Principal{% endblock %}
 
 {% block content %}
-<div class="glass-card" style="margin-bottom: 2.5rem; text-align: center; padding: 3rem 2rem;">
-    <h1 style="color: var(--primary); font-size: 2.25rem; margin-bottom: 0.75rem; font-weight: 800;">
-        Bem-vindo ao Portal de Medicamentos
-    </h1>
-    <p style="color: var(--text-secondary); font-size: 1.1rem; max-width: 700px; margin: 0 auto; line-height: 1.6;">
-        Plataforma de consulta rápida de estoque e manuais técnicos para os profissionais de saúde do município de Itamonte - MG.
-    </p>
+<div class="glass-card" style="margin-bottom: 2.5rem; padding: 3rem 2rem; display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo Farmácia" style="height: 150px; max-width: 100%; object-fit: contain; mix-blend-mode: multiply;">
+    <div style="text-align: left; max-width: 700px;">
+        <h1 style="color: var(--primary); font-size: 2.25rem; margin-bottom: 0.75rem; font-weight: 800;">
+            Bem-vindo ao Portal de Medicamentos
+        </h1>
+        <p style="color: var(--text-secondary); font-size: 1.1rem; margin: 0; line-height: 1.6;">
+            Plataforma de consulta rápida de estoque e manuais técnicos para os profissionais de saúde do município de Itamonte - MG.
+        </p>
+    </div>
 </div>
 
 <div class="dashboard-grid">

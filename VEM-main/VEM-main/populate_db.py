@@ -34,7 +34,10 @@ def init_db():
         classificacao TEXT NOT NULL,
         posologia TEXT,
         indicacao TEXT,
-        status TEXT NOT NULL CHECK(status IN ('Disponível', 'Indisponível', 'Estoque baixo', 'Aguardando entrega', 'Farmácia Popular')),
+        status TEXT NOT NULL CHECK(status IN (
+            'Disponível', 'Indisponível', 'Estoque baixo', 'Aguardando entrega', 'Farmácia Popular',
+            'Disponível, Farmácia Popular', 'Estoque baixo, Farmácia Popular', 'Aguardando entrega, Farmácia Popular', 'Indisponível, Farmácia Popular'
+        )),
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     );
@@ -93,7 +96,7 @@ def init_db():
     conn.commit()
     print("Database tables created successfully.")
     
-    # 8. Insert Default Users
+   # 8. Insert Default Users
     # Admin (Ana Clara)
     admin_pw_hash = generate_password_hash("farmacia@2026!")
     cursor.execute("""
@@ -111,8 +114,7 @@ def init_db():
     conn.commit()
     print("Default users created:")
     print("  - admin: Claralimabarboza / farmacia@2026!")
-    print("  - viewer: consultor / consulta123")
-    
+    print("  - viewer: consultor / consulta123 (Nome: Consultor)")
     # 9. Load and insert standard medications
     meds_file = os.path.join(DATA_DIR, "medicamentos.json")
     if os.path.exists(meds_file):

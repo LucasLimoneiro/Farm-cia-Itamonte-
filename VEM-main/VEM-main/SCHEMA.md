@@ -40,7 +40,10 @@ Este documento define a **estrutura inegociável dos dados** do projeto **Site G
 
 **Status permitidos (ENUM via CHECK constraint):**
 ```sql
-status TEXT CHECK(status IN ('Disponível', 'Indisponível', 'Estoque baixo', 'Aguardando entrega', 'Farmácia Popular'))
+status TEXT CHECK(status IN (
+    'Disponível', 'Indisponível', 'Estoque baixo', 'Aguardando entrega', 'Farmácia Popular',
+    'Disponível, Farmácia Popular', 'Estoque baixo, Farmácia Popular', 'Aguardando entrega, Farmácia Popular', 'Indisponível, Farmácia Popular'
+))
 ```
 
 **JSON equivalente:**
@@ -331,7 +334,10 @@ CREATE TABLE IF NOT EXISTS medicamentos (
     classificacao TEXT NOT NULL,
     posologia TEXT,
     indicacao TEXT,
-    status TEXT NOT NULL CHECK(status IN ('Disponível', 'Indisponível', 'Estoque baixo', 'Aguardando entrega', 'Farmácia Popular')),
+    status TEXT NOT NULL CHECK(status IN (
+        'Disponível', 'Indisponível', 'Estoque baixo', 'Aguardando entrega', 'Farmácia Popular',
+        'Disponível, Farmácia Popular', 'Estoque baixo, Farmácia Popular', 'Aguardando entrega, Farmácia Popular', 'Indisponível, Farmácia Popular'
+    )),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

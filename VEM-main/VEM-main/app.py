@@ -107,7 +107,7 @@ def api_medicamentos():
 # API: POST Alterar Status (Admin Only)
 @app.route('/api/alterar_status', methods=['POST'])
 def api_alterar_status():
-    if session.get('role') != 'admin':
+    if session.get('role') != 'admin' or session.get('nome_completo') != 'Ana Clara Lima Barboza':
         print(f"[UNAUTHORIZED] Tentativa não autorizada de alterar status por usuário [{session.get('username')}].")
         return jsonify({"success": False, "error": "Unauthorized", "message": "Apenas o responsável pode alterar status"}), 401
         
@@ -119,7 +119,10 @@ def api_alterar_status():
     novo_status = data['novo_status']
     
     # Validate status values
-    valid_statuses = ['Disponível', 'Indisponível', 'Estoque baixo', 'Aguardando entrega', 'Farmácia Popular']
+    valid_statuses = [
+        'Disponível', 'Indisponível', 'Estoque baixo', 'Aguardando entrega', 'Farmácia Popular',
+        'Disponível, Farmácia Popular', 'Estoque baixo, Farmácia Popular', 'Aguardando entrega, Farmácia Popular', 'Indisponível, Farmácia Popular'
+    ]
     if novo_status not in valid_statuses:
         return jsonify({"success": False, "error": "Bad Request", "message": "Status inválido"}), 400
         
@@ -163,7 +166,7 @@ def api_alterar_status():
 # API: POST Cadastrar Medicamento (Admin Only)
 @app.route('/api/cadastrar_medicamento', methods=['POST'])
 def api_cadastrar_medicamento():
-    if session.get('role') != 'admin':
+    if session.get('role') != 'admin' or session.get('nome_completo') != 'Ana Clara Lima Barboza':
         print(f"[UNAUTHORIZED] Tentativa não autorizada de cadastrar medicamento por usuário [{session.get('username')}].")
         return jsonify({"success": False, "error": "Unauthorized", "message": "Apenas o responsável pode cadastrar medicamentos"}), 401
         
@@ -181,7 +184,10 @@ def api_cadastrar_medicamento():
         return jsonify({"success": False, "error": "Bad Request", "message": "Nome e classificação não podem ser vazios"}), 400
         
     # Validate status values
-    valid_statuses = ['Disponível', 'Indisponível', 'Estoque baixo', 'Aguardando entrega', 'Farmácia Popular']
+    valid_statuses = [
+        'Disponível', 'Indisponível', 'Estoque baixo', 'Aguardando entrega', 'Farmácia Popular',
+        'Disponível, Farmácia Popular', 'Estoque baixo, Farmácia Popular', 'Aguardando entrega, Farmácia Popular', 'Indisponível, Farmácia Popular'
+    ]
     if status not in valid_statuses:
         return jsonify({"success": False, "error": "Bad Request", "message": "Status inválido"}), 400
         
@@ -266,7 +272,7 @@ def monitor_glicose():
 # ROTA: Admin Dashboard (HTML View)
 @app.route('/admin')
 def admin_dashboard():
-    if session.get('role') != 'admin':
+    if session.get('role') != 'admin' or session.get('nome_completo') != 'Ana Clara Lima Barboza':
         return redirect(url_for('index'))
     
     db = get_db()
@@ -299,7 +305,7 @@ def admin_dashboard():
 # ROTA: Admin Medicamentos (HTML View)
 @app.route('/admin/medicamentos')
 def admin_medicamentos():
-    if session.get('role') != 'admin':
+    if session.get('role') != 'admin' or session.get('nome_completo') != 'Ana Clara Lima Barboza':
         return redirect(url_for('index'))
         
     db = get_db()

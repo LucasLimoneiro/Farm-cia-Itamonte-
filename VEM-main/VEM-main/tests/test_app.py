@@ -34,7 +34,10 @@ class TestFarmaciaApp(unittest.TestCase):
             classificacao TEXT NOT NULL,
             posologia TEXT,
             indicacao TEXT,
-            status TEXT NOT NULL CHECK(status IN ('Disponível', 'Indisponível', 'Estoque baixo', 'Aguardando entrega')),
+            status TEXT NOT NULL CHECK(status IN (
+                'Disponível', 'Indisponível', 'Estoque baixo', 'Aguardando entrega', 'Farmácia Popular',
+                'Disponível, Farmácia Popular', 'Estoque baixo, Farmácia Popular', 'Aguardando entrega, Farmácia Popular', 'Indisponível, Farmácia Popular'
+            )),
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         );
@@ -69,9 +72,9 @@ class TestFarmaciaApp(unittest.TestCase):
         admin_hash = generate_password_hash("admin123")
         viewer_hash = generate_password_hash("consulta123")
         self.cursor.execute("INSERT INTO usuarios (username, password_hash, role, nome_completo, cidade) VALUES (?, ?, ?, ?, ?)",
-                            ("responsavel", admin_hash, "admin", "Ana Clara LimaS", "Itamonte"))
+                            ("responsavel", admin_hash, "admin", "Ana Clara Lima Barboza", "Itamonte"))
         self.cursor.execute("INSERT INTO usuarios (username, password_hash, role, nome_completo, cidade) VALUES (?, ?, ?, ?, ?)",
-                            ("consultor", viewer_hash, "viewer", "Mariana Teste", "Itamonte"))
+                            ("consultor", viewer_hash, "viewer", "Consultor Teste", "Itamonte"))
         
         # Insert test medications
         self.cursor.execute("INSERT INTO medicamentos (nome, classificacao, posologia, indicacao, status) VALUES (?, ?, ?, ?, ?)",
@@ -128,7 +131,7 @@ class TestFarmaciaApp(unittest.TestCase):
             sess['user_id'] = 1
             sess['username'] = 'responsavel'
             sess['role'] = 'admin'
-            sess['nome_completo'] = 'Ana Clara Lima Teste'
+            sess['nome_completo'] = 'Ana Clara Lima Barboza'
             sess['cidade'] = 'Itamonte'
             
         # Act
@@ -153,7 +156,7 @@ class TestFarmaciaApp(unittest.TestCase):
             sess['user_id'] = 2
             sess['username'] = 'consultor'
             sess['role'] = 'viewer'
-            sess['nome_completo'] = 'Mariana Teste'
+            sess['nome_completo'] = 'Consultor Teste'
             sess['cidade'] = 'Itamonte'
             
         # Act
@@ -173,7 +176,7 @@ class TestFarmaciaApp(unittest.TestCase):
             sess['user_id'] = 1
             sess['username'] = 'responsavel'
             sess['role'] = 'admin'
-            sess['nome_completo'] = 'Carlos Teste'
+            sess['nome_completo'] = 'Ana Clara Lima Barboza'
             sess['cidade'] = 'Itamonte'
             
         # Act
@@ -204,7 +207,7 @@ class TestFarmaciaApp(unittest.TestCase):
             sess['user_id'] = 2
             sess['username'] = 'consultor'
             sess['role'] = 'viewer'
-            sess['nome_completo'] = 'Mariana Teste'
+            sess['nome_completo'] = 'Consultor Teste'
             sess['cidade'] = 'Itamonte'
             
         # Act
