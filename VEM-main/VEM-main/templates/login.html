@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar - Farmácia Municipal de Itamonte</title>
+    <!-- Local CSS: offline-first, no external CDNs -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem;
+            background: linear-gradient(135deg, #e0f2fe 0%, #eefcf6 100%);
+        }
+        .login-card {
+            width: 100%;
+            max-width: 400px;
+        }
+        .login-logo {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card login-card">
+        <div class="login-header">
+            <span class="login-logo">⚕️</span>
+            <h1>Farmácia de Itamonte</h1>
+            <p>Acesse o Portal de Gestão e Consulta</p>
+        </div>
+        
+        {% if error %}
+            <div class="error-message">
+                <strong>Erro:</strong> {{ error }}
+            </div>
+        {% endif %}
+        
+        <form action="{{ url_for('login') }}" method="POST">
+            <div class="form-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" class="form-control" placeholder="Digite seu login" required autocomplete="username">
+            </div>
+            
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Digite sua senha" required autocomplete="current-password">
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%; background-color: var(--primary); margin-bottom: 1rem;">
+                Entrar
+            </button>
+            
+            <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">
+                Acesso restrito a profissionais de saúde e responsáveis autorizados pela Farmácia Básica Municipal de Itamonte.
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>

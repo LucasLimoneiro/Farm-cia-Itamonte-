@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+
+{% block title %}Painel do Administrador{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+    <div style="display: flex; align-items: center; gap: 1rem;">
+        <div style="background-color: #ecfdf5; color: #10b981; width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </div>
+        <div>
+            <h1 style="color: #0f172a; font-size: 1.5rem; font-weight: 800; margin: 0 0 0.25rem 0;">Painel do Administrador</h1>
+            <p style="color: #64748b; font-size: 0.95rem; margin: 0;">Farmácia Municipal de Itamonte</p>
+        </div>
+    </div>
+    <a href="{{ url_for('medicamentos_view') }}" class="btn btn-primary" style="background-color: #10b981; border-radius: 8px;">
+        + Novo Medicamento
+    </a>
+</div>
+
+<!-- Tabs -->
+<div style="display: flex; gap: 0.5rem; margin-bottom: 2rem;">
+    <div style="background: #f1f5f9; border: 1px solid #e2e8f0; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; font-size: 0.9rem; color: #1e293b; display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+        Dashboard
+    </div>
+    <a href="{{ url_for('admin_medicamentos') }}" style="background: transparent; color: #64748b; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500; font-size: 0.9rem; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: background 0.2s;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M10.5 20.5l-6-6a4.5 4.5 0 0 1 6.5-6.5l6 6a4.5 4.5 0 0 1-6.5 6.5z"></path><line x1="14" y1="9.5" x2="9.5" y2="14"></line></svg>
+        Medicamentos
+    </a>
+</div>
+
+<!-- KPIs -->
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+    <!-- KPI 1 -->
+    <div style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.25rem; display: flex; align-items: center; gap: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+        <div style="background: #f0fdfa; color: #0f766e; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+        </div>
+        <div>
+            <div style="font-size: 1.5rem; font-weight: 800; color: #0f766e; line-height: 1;">{{ total }}</div>
+            <div style="font-size: 0.8rem; color: #64748b; margin-top: 0.25rem;">Total de Medicamentos</div>
+        </div>
+    </div>
+    
+    <!-- KPI 2 -->
+    <div style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.25rem; display: flex; align-items: center; gap: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+        <div style="background: #ecfdf5; color: #10b981; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        </div>
+        <div>
+            <div style="font-size: 1.5rem; font-weight: 800; color: #10b981; line-height: 1;">{{ disponiveis }}</div>
+            <div style="font-size: 0.8rem; color: #64748b; margin-top: 0.25rem;">Disponíveis</div>
+        </div>
+    </div>
+    
+    <!-- KPI 3 -->
+    <div style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.25rem; display: flex; align-items: center; gap: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+        <div style="background: #fffbeb; color: #d97706; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+        </div>
+        <div>
+            <div style="font-size: 1.5rem; font-weight: 800; color: #d97706; line-height: 1;">{{ atencao }}</div>
+            <div style="font-size: 0.8rem; color: #64748b; margin-top: 0.25rem;">Atenção Necessária</div>
+        </div>
+    </div>
+    
+    <!-- KPI 4 -->
+    <div style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.25rem; display: flex; align-items: center; gap: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+        <div style="background: #eff6ff; color: #3b82f6; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+        </div>
+        <div>
+            <div style="font-size: 1.5rem; font-weight: 800; color: #3b82f6; line-height: 1;">{{ popular }}</div>
+            <div style="font-size: 0.8rem; color: #64748b; margin-top: 0.25rem;">Farmácia Popular</div>
+        </div>
+    </div>
+</div>
+
+<!-- Charts Row -->
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+    <!-- Donut Chart -->
+    <div style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+        <h3 style="font-size: 1.05rem; color: #1e293b; margin-bottom: 2rem;">Disponibilidade do Estoque</h3>
+        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <div style="position: relative; width: 220px; height: 220px;">
+                <svg viewBox="0 0 36 36" width="100%" height="100%">
+                    <!-- Background circle for unavailable/attention -->
+                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#e2e8f0" stroke-width="6"/>
+                    <!-- Foreground circle (Disponível) -->
+                    {% set pct = (disponiveis / total * 100) if total > 0 else 0 %}
+                    <path stroke-dasharray="{{ pct }}, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#10b981" stroke-width="6"/>
+                </svg>
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 2.5rem; font-weight: 800; color: #10b981;">
+                    {{ disponiveis }}
+                </div>
+            </div>
+            <div style="margin-top: 1rem; color: #10b981; font-weight: 600; font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="display: inline-block; width: 10px; height: 10px; background: #10b981; border-radius: 50%;"></span> Disponível
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bar Chart -->
+    <div style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+        <h3 style="font-size: 1.05rem; color: #1e293b; margin-bottom: 1.5rem;">Top 10 Classes Farmacológicas</h3>
+        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            {% set max_val = classes[0].total if classes else 1 %}
+            {% for c in classes[:10] %}
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <div style="width: 35%; text-align: right; font-size: 0.75rem; color: #64748b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="{{ c.classe }}">
+                    {{ c.classe }}
+                </div>
+                <div style="width: 65%; display: flex; align-items: center;">
+                    <div style="background: #2dd4bf; height: 16px; border-radius: 2px; width: {{ (c.total / max_val * 100) }}%; min-width: 2px;"></div>
+                    <span style="font-size: 0.75rem; color: #94a3b8; margin-left: 0.5rem;">{{ c.total }}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Table -->
+<div style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+    <h3 style="font-size: 1.05rem; color: #1e293b; margin-bottom: 1.25rem; font-weight: 700;">Resumo por Classe Farmacológica</h3>
+    
+    <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+            <thead>
+                <tr>
+                    <th style="padding: 1rem 0; text-align: left; color: #64748b; font-weight: 600; border-bottom: 1px solid #e2e8f0;">Classe</th>
+                    <th style="padding: 1rem 0; text-align: center; color: #64748b; font-weight: 600; border-bottom: 1px solid #e2e8f0;">Total</th>
+                    <th style="padding: 1rem 0; text-align: center; color: #10b981; font-weight: 600; border-bottom: 1px solid #e2e8f0;">Disponível</th>
+                    <th style="padding: 1rem 0; text-align: center; color: #d97706; font-weight: 600; border-bottom: 1px solid #e2e8f0;">Est. Baixo</th>
+                    <th style="padding: 1rem 0; text-align: center; color: #ef4444; font-weight: 600; border-bottom: 1px solid #e2e8f0;">Indisponível</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for c in classes %}
+                <tr>
+                    <td style="padding: 1rem 0; color: #1e293b; font-weight: 500; border-bottom: 1px solid #f1f5f9;">{{ c.classe }}</td>
+                    <td style="padding: 1rem 0; text-align: center; font-weight: 500; color: #475569; border-bottom: 1px solid #f1f5f9;">{{ c.total }}</td>
+                    <td style="padding: 1rem 0; text-align: center; font-weight: 500; color: #10b981; border-bottom: 1px solid #f1f5f9;">{{ c.disponivel }}</td>
+                    <td style="padding: 1rem 0; text-align: center; font-weight: 500; color: #d97706; border-bottom: 1px solid #f1f5f9;">{{ c.est_baixo }}</td>
+                    <td style="padding: 1rem 0; text-align: center; font-weight: 500; color: #ef4444; border-bottom: 1px solid #f1f5f9;">{{ c.indisponivel }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.getElementById('nav-admin').classList.add('active');
+</script>
+{% endblock %}

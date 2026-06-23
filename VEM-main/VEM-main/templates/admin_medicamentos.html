@@ -1,0 +1,218 @@
+{% extends 'base.html' %}
+
+{% block title %}Medicamentos - Admin{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+    <div style="display: flex; align-items: center; gap: 1rem;">
+        <div style="background-color: #ecfdf5; color: #10b981; width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </div>
+        <div>
+            <h1 style="color: #0f172a; font-size: 1.5rem; font-weight: 800; margin: 0 0 0.25rem 0;">Painel do Administrador</h1>
+            <p style="color: #64748b; font-size: 0.95rem; margin: 0;">Farmácia Municipal de Itamonte</p>
+        </div>
+    </div>
+    <button id="btn-open-cadastrar" class="btn btn-primary" style="background-color: #10b981; border-radius: 8px;">
+        + Novo Medicamento
+    </button>
+</div>
+
+<!-- Tabs -->
+<div style="display: flex; gap: 0.5rem; margin-bottom: 2rem;">
+    <a href="{{ url_for('admin_dashboard') }}" style="background: transparent; color: #64748b; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500; font-size: 0.9rem; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: background 0.2s;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+        Dashboard
+    </a>
+    <div style="background: #f1f5f9; border: 1px solid #e2e8f0; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; font-size: 0.9rem; color: #1e293b; display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M10.5 20.5l-6-6a4.5 4.5 0 0 1 6.5-6.5l6 6a4.5 4.5 0 0 1-6.5 6.5z"></path><line x1="14" y1="9.5" x2="9.5" y2="14"></line></svg>
+        Medicamentos
+    </div>
+</div>
+
+<!-- Filters -->
+<div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+    <div style="position: relative; flex-grow: 1; min-width: 300px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%);"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="search-input" class="form-control" placeholder="Buscar..." style="padding-left: 2.75rem; border-radius: 8px; border: 1px solid #e2e8f0; width: 100%; box-sizing: border-box; height: 42px;">
+    </div>
+    <div style="min-width: 250px;">
+        <select id="classification-filter" class="form-control" style="border-radius: 8px; border: 1px solid #e2e8f0; width: 100%; height: 42px; background-color: #f8fafc; color: #475569; font-weight: 500;">
+            <option value="">Todas as Classes</option>
+            {% for c in classifications %}
+                <option value="{{ c.classificacao }}">{{ c.classificacao }}</option>
+            {% endfor %}
+        </select>
+    </div>
+</div>
+
+<!-- Table -->
+<div style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; margin-bottom: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02); overflow-x: auto;">
+    <table id="med-table" style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+        <thead>
+            <tr>
+                <th style="padding: 1rem; text-align: left; color: #64748b; font-weight: 600; border-bottom: 1px solid #e2e8f0; background: transparent;">Medicamento</th>
+                <th style="padding: 1rem; text-align: left; color: #64748b; font-weight: 600; border-bottom: 1px solid #e2e8f0; background: transparent;">Classe</th>
+                <th style="padding: 1rem; text-align: left; color: #64748b; font-weight: 600; border-bottom: 1px solid #e2e8f0; background: transparent;">Posologia</th>
+                <th style="padding: 1rem; text-align: center; color: #64748b; font-weight: 600; border-bottom: 1px solid #e2e8f0; background: transparent;">Status</th>
+                <th style="padding: 1rem; text-align: center; color: #64748b; font-weight: 600; border-bottom: 1px solid #e2e8f0; background: transparent;">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for m in medicamentos %}
+            <tr class="med-card" data-id="{{ m.id }}" data-status="{{ m.status }}" data-search-text="{{ m.nome|lower }} {{ m.classificacao|lower }}" style="border-bottom: 1px solid #f1f5f9;">
+                <td style="padding: 1rem; color: #1e293b; font-weight: 600; vertical-align: middle;">{{ m.nome }}</td>
+                <td class="row-class" style="padding: 1rem; color: #94a3b8; font-weight: 500; font-size: 0.85rem; vertical-align: middle;">{{ m.classificacao }}</td>
+                <td style="padding: 1rem; color: #94a3b8; font-weight: 500; font-size: 0.85rem; vertical-align: middle;">
+                    <div style="max-width: 250px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="{{ m.posologia }}">
+                        {{ m.posologia or '-' }}
+                    </div>
+                </td>
+                <td style="padding: 1rem; text-align: center; vertical-align: middle;">
+                    <span class="badge badge-status 
+                        {% if m.status == 'Disponível' %}status-disponivel
+                        {% elif m.status == 'Indisponível' %}status-indisponivel
+                        {% elif m.status == 'Estoque baixo' %}status-estoque-baixo
+                        {% elif m.status == 'Aguardando entrega' %}status-aguardando
+                        {% elif m.status == 'Farmácia Popular' %}status-farmacia-popular
+                        {% endif %}"
+                        style="padding: 0.25rem 0.75rem; border-radius: 16px; font-size: 0.8rem; border: 1px solid currentColor; display: inline-flex; align-items: center; gap: 0.25rem; white-space: nowrap;">
+                        {% if m.status == 'Disponível' %}
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        {% else %}
+                            <span style="width: 6px; height: 6px; border-radius: 50%; background-color: currentColor;"></span>
+                        {% endif %}
+                        {{ m.status }}
+                    </span>
+                </td>
+                <td style="padding: 1rem; text-align: center; vertical-align: middle;">
+                    <div style="display: flex; gap: 0.75rem; justify-content: center; align-items: center;">
+                        <button class="btn-edit-status" data-id="{{ m.id }}" data-nome="{{ m.nome }}" data-status="{{ m.status }}" style="background: none; border: none; cursor: pointer; color: #475569; padding: 0;">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                        </button>
+                        <button style="background: none; border: none; cursor: pointer; color: #ef4444; padding: 0;">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<!-- MODAL: Editar Status -->
+<dialog id="edit-status-dialog">
+    <div class="dialog-header">
+        <h3>Alterar Status</h3>
+        <button class="dialog-close" aria-label="Fechar">&times;</button>
+    </div>
+    <div class="dialog-body">
+        <p>Medicamento: <strong id="edit-med-nome"></strong></p>
+        <form id="edit-status-form">
+            <input type="hidden" id="edit-med-id">
+            <div class="form-group">
+                <label for="novo-status">Novo Status</label>
+                <select id="novo-status" class="form-control" required>
+                    <option value="Disponível">Disponível</option>
+                    <option value="Estoque baixo">Estoque baixo</option>
+                    <option value="Aguardando entrega">Aguardando entrega</option>
+                    <option value="Farmácia Popular">Farmácia Popular</option>
+                    <option value="Indisponível">Indisponível</option>
+                </select>
+            </div>
+            <div class="dialog-buttons">
+                <button type="button" class="btn btn-secondary btn-cancel">Cancelar</button>
+                <button type="submit" class="btn btn-primary">Salvar Alteração</button>
+            </div>
+        </form>
+    </div>
+</dialog>
+
+<!-- MODAL: Cadastrar Medicamento -->
+<dialog id="cadastrar-med-dialog">
+    <div class="dialog-header">
+        <h3>Cadastrar Novo Medicamento</h3>
+        <button class="dialog-close" aria-label="Fechar">&times;</button>
+    </div>
+    
+    <form id="cadastrar-med-form">
+        <div class="form-group">
+            <label for="cad-nome">Nome + Apresentação *</label>
+            <input type="text" id="cad-nome" class="form-control" placeholder="Ex: Dipirona 500mg cp" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="cad-classificacao">Classe Farmacológica *</label>
+            <input type="text" id="cad-classificacao" class="form-control" placeholder="Ex: ANALGÉSICOS E ANTIPIRÉTICOS" list="dl-classificacoes" required>
+            <datalist id="dl-classificacoes">
+                {% for c in classifications %}
+                    <option value="{{ c.classificacao }}"></option>
+                {% endfor %}
+            </datalist>
+        </div>
+        
+        <div class="form-group">
+            <label for="cad-posologia">Posologia Padrão</label>
+            <textarea id="cad-posologia" class="form-control" rows="2" placeholder="Ex: 500-1000mg a cada 6-8h"></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label for="cad-indicacao">Indicação</label>
+            <input type="text" id="cad-indicacao" class="form-control" placeholder="Ex: Dor e febre">
+        </div>
+        
+        <div class="form-group">
+            <label for="cad-status">Status de Estoque Inicial</label>
+            <select id="cad-status" class="form-control">
+                <option value="Disponível">Disponível</option>
+                <option value="Estoque baixo">Estoque baixo</option>
+                <option value="Aguardando entrega">Aguardando entrega</option>
+                <option value="Farmácia Popular">Farmácia Popular</option>
+                <option value="Indisponível">Indisponível</option>
+            </select>
+        </div>
+        
+        <div class="dialog-buttons">
+            <button type="button" class="btn btn-secondary btn-cancel">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+        </div>
+    </form>
+</dialog>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.getElementById('nav-admin').classList.add('active');
+    
+    // Custom search logic for this table view (overrides main.js generic logic for this specific page)
+    const searchInput = document.getElementById('search-input');
+    const classFilter = document.getElementById('classification-filter');
+    const rows = document.querySelectorAll('#med-table tbody tr');
+    
+    function filterTable() {
+        const query = searchInput.value.toLowerCase().trim();
+        const classVal = classFilter.value;
+        
+        rows.forEach(row => {
+            const textData = row.dataset.searchText || '';
+            const rowClass = row.querySelector('.row-class').textContent.trim();
+            
+            const matchesSearch = textData.includes(query);
+            const matchesClass = classVal === '' || rowClass === classVal;
+            
+            if (matchesSearch && matchesClass) {
+                row.style.display = '';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    }
+    
+    if(searchInput) searchInput.addEventListener('input', filterTable);
+    if(classFilter) classFilter.addEventListener('change', filterTable);
+    
+</script>
+{% endblock %}

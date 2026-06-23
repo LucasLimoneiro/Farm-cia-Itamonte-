@@ -1,0 +1,116 @@
+[
+  {
+    "nome": "Rifampicina 300mg",
+    "programa": "Tuberculose",
+    "posologia": "10mg/kg/dia (máx. 600mg/dia), em jejum",
+    "indicacao": "Tratamento da tuberculose ativa em associação"
+  },
+  {
+    "nome": "Isoniazida 100mg",
+    "programa": "Tuberculose",
+    "posologia": "5mg/kg/dia (máx. 300mg/dia), dose única diária",
+    "indicacao": "Tratamento da tuberculose ativa ou infecção latente"
+  },
+  {
+    "nome": "Isoniazida 300mg",
+    "programa": "Tuberculose",
+    "posologia": "300mg/dia, dose única diária (adultos)",
+    "indicacao": "Tratamento da tuberculose ativa ou infecção latente"
+  },
+  {
+    "nome": "Pirazinamida 500mg",
+    "programa": "Tuberculose",
+    "posologia": "20-30mg/kg/dia (máx. 2g/dia), dose única diária",
+    "indicacao": "Esquema básico de tratamento da tuberculose ativa"
+  },
+  {
+    "nome": "Etambutol 400mg",
+    "programa": "Tuberculose",
+    "posologia": "15-25mg/kg/dia, dose única diária",
+    "indicacao": "Esquema básico de tratamento da tuberculose ativa em associação"
+  },
+  {
+    "nome": "Rifampicina + Isoniazida + Pirazinamida + Etambutol (150+75+400+275)mg",
+    "programa": "Tuberculose",
+    "posologia": "Dose de acordo com o peso, dose única diária (Esquema 4 em 1)",
+    "indicacao": "Fase intensiva de tratamento da tuberculose pulmonar e extrapulmonar"
+  },
+  {
+    "nome": "PQT-U Adulto (Dapsona 100mg + Rifampicina 600mg + Clofazimina 300mg/50mg)",
+    "programa": "Hanseníase",
+    "posologia": "Esquema PQT-U (Poliquimioterapia Única) - dose mensal supervisionada + dose diária auto-administrada",
+    "indicacao": "Tratamento da Hanseníase Multibacilar (MB) e Paucibacilar (PB) em adultos"
+  },
+  {
+    "nome": "PQT-U Infantil (Dapsona 50mg + Rifampicina 450mg + Clofazimina 150mg/50mg)",
+    "programa": "Hanseníase",
+    "posologia": "Esquema PQT-U infantil conforme faixa etária e peso corporais",
+    "indicacao": "Tratamento da Hanseníase em crianças"
+  },
+  {
+    "nome": "Dapsona 100mg Comprimido",
+    "programa": "Hanseníase",
+    "posologia": "100mg/dia de forma auto-administrada",
+    "indicacao": "Parte do esquema de tratamento da hanseníase e profilaxia"
+  },
+  {
+    "nome": "Clofazimina 50mg / 100mg",
+    "programa": "Hanseníase",
+    "posologia": "50mg diários auto-administrados + 300mg mensais supervisionados",
+    "indicacao": "Parte do esquema multibacilar da hanseníase e controle de estados reacionais"
+  },
+  {
+    "nome": "Fosfato de Oseltamivir 75mg (Tamiflu)",
+    "programa": "Influenza",
+    "posologia": "75mg a cada 12h por 5 dias (adultos e adolescentes)",
+    "indicacao": "Tratamento e profilaxia de infecção pelos vírus da Influenza A e B"
+  },
+  {
+    "nome": "Fosfato de Oseltamivir 45mg",
+    "programa": "Influenza",
+    "posologia": "Dose pediátrica conforme peso corpóreo a cada 12h por 5 dias",
+    "indicacao": "Tratamento de infecção por Influenza em crianças"
+  },
+  {
+    "nome": "Fosfato de Oseltamivir 30mg",
+    "programa": "Influenza",
+    "posologia": "Dose pediátrica conforme peso corpóreo a cada 12h por 5 dias",
+    "indicacao": "Tratamento de infecção por Influenza em crianças"
+  },
+  {
+    "nome": "Benzonidazol 100mg",
+    "programa": "Chagas",
+    "posologia": "5-7mg/kg/dia dividido em 2 doses (de 12h em 12h) por 60 dias (máx. 300mg/dia)",
+    "indicacao": "Tratamento etiológico da Doença de Chagas na fase aguda e crônica recente"
+  },
+  {
+    "nome": "Benzonidazol 12.5mg",
+    "programa": "Chagas",
+    "posologia": "Dose pediátrica dividida a cada 12h por 60 dias",
+    "indicacao": "Tratamento de Doença de Chagas em crianças e lactentes"
+  },
+  {
+    "nome": "Metronidazol 250mg",
+    "programa": "Parasitoses",
+    "posologia": "250mg a 500mg de 8h em 8h, por 5 a 10 dias",
+    "indicacao": "Tratamento de Amebíase, Giardíase e outras infecções por protozoários anaeróbios"
+  },
+  {
+    "nome": "Albendazol 400mg Comprimido Mastigável",
+    "programa": "Parasitoses",
+    "posologia": "400mg em dose única (para a maioria das helmintíases)",
+    "indicacao": "Infecções por nematódeos e cestódeos intestinais comuns"
+  },
+  {
+    "nome": "Ivermectina 6mg Comprimido",
+    "programa": "Parasitoses",
+    "posologia": "200mcg/kg em dose única (ex: 2 comprimidos para 60kg)",
+    "indicacao": "Tratamento de Escabiose, Pediculose, Estrongiloidíase e Filariose"
+  },
+  {
+    "nome": "Vacina BCG",
+    "programa": "Imunobiológicos",
+    "posologia": "Dose única intradérmica ao nascer (0.1mL)",
+    "indicacao": "Prevenção das formas graves da Tuberculose (Miliar e Meníngea)"
+  }
+]

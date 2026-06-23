@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+
+{% block title %}Guia Prático de Insulina{% endblock %}
+
+{% block content %}
+<!-- Cabeçalho -->
+<div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+    <div style="background-color: #eff6ff; color: #3b82f6; width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+    </div>
+    <div>
+        <h1 style="color: #0f172a; font-size: 1.5rem; font-weight: 800; margin: 0 0 0.25rem 0;">Guia Prático de Insulina</h1>
+        <p style="color: #64748b; font-size: 0.95rem; margin: 0;">Como utilizar insulina NPH e Regular</p>
+    </div>
+</div>
+
+<!-- Comparativo NPH vs Regular -->
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+    <!-- NPH Card -->
+    <div style="border: 1px solid #bfdbfe; border-radius: 12px; padding: 1.5rem; background-color: #f8fafc;">
+        <span style="background-color: #eff6ff; color: #3b82f6; font-size: 0.85rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 12px; display: inline-block; margin-bottom: 1rem;">Insulina NPH</span>
+        <div style="font-size: 0.95rem; color: #334155; line-height: 1.6;">
+            <strong>Aspecto:</strong> leitosa (turva).<br>
+            <strong>Início de ação:</strong> 2 a 4 horas.<br>
+            <strong>Pico:</strong> 4 a 10 horas.<br>
+            <strong>Duração:</strong> 10 a 18 horas.<br>
+            <strong>Uso:</strong> Insulina basal — controle da glicemia ao longo do dia. Geralmente aplicada 2x/dia (manhã e noite).
+        </div>
+    </div>
+    <!-- Regular Card -->
+    <div style="border: 1px solid #fef08a; border-radius: 12px; padding: 1.5rem; background-color: #fdfbf7;">
+        <span style="background-color: #fef9c3; color: #ca8a04; font-size: 0.85rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 12px; display: inline-block; margin-bottom: 1rem;">Insulina Regular</span>
+        <div style="font-size: 0.95rem; color: #334155; line-height: 1.6;">
+            <strong>Aspecto:</strong> transparente (cristalina).<br>
+            <strong>Início de ação:</strong> 30 minutos a 1 hora.<br>
+            <strong>Pico:</strong> 2 a 3 horas.<br>
+            <strong>Duração:</strong> 5 a 8 horas.<br>
+            <strong>Uso:</strong> Correção rápida — aplicar 30 min antes das refeições.
+        </div>
+    </div>
+</div>
+
+<!-- Tabs -->
+<div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
+    <button style="background-color: #f1f5f9; border: 1px solid #e2e8f0; color: #0f172a; padding: 0.5rem 1.25rem; border-radius: 20px; font-weight: 600; cursor: pointer; font-size: 0.9rem;">Frasco (Seringa)</button>
+    <button style="background-color: transparent; border: 1px solid transparent; color: #64748b; padding: 0.5rem 1.25rem; border-radius: 20px; font-weight: 500; cursor: pointer; font-size: 0.9rem;">Caneta Reutilizável</button>
+</div>
+
+<!-- Como preparar e aplicar -->
+<div class="glass-card" style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0;">
+    <h3 style="color: #0f172a; font-size: 1.15rem; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+        <span style="color: #10b981;">💉</span> Como preparar e aplicar com seringa
+    </h3>
+    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem;">
+        <li style="display: flex; gap: 1rem; align-items: flex-start; font-size: 0.95rem; color: #475569;">
+            <span style="background-color: #10b981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; flex-shrink: 0; margin-top: 2px;">1</span>
+            Lave as mãos com água e sabão.
+        </li>
+        <li style="display: flex; gap: 1rem; align-items: flex-start; font-size: 0.95rem; color: #475569;">
+            <span style="background-color: #10b981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; flex-shrink: 0; margin-top: 2px;">2</span>
+            Se for Insulina NPH (turva), role o frasco entre as palmas das mãos 20 vezes para homogeneizar. NUNCA agite.
+        </li>
+        <li style="display: flex; gap: 1rem; align-items: flex-start; font-size: 0.95rem; color: #475569;">
+            <span style="background-color: #10b981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; flex-shrink: 0; margin-top: 2px;">3</span>
+            Limpe a borracha do frasco com algodão embebido em álcool 70%.
+        </li>
+        <li style="display: flex; gap: 1rem; align-items: flex-start; font-size: 0.95rem; color: #475569;">
+            <span style="background-color: #10b981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; flex-shrink: 0; margin-top: 2px;">4</span>
+            Com a seringa, aspire ar na quantidade de unidades a ser aplicada.
+        </li>
+        <li style="display: flex; gap: 1rem; align-items: flex-start; font-size: 0.95rem; color: #475569;">
+            <span style="background-color: #10b981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; flex-shrink: 0; margin-top: 2px;">5</span>
+            Injete o ar dentro do frasco (com ele de cabeça para baixo).
+        </li>
+        <li style="display: flex; gap: 1rem; align-items: flex-start; font-size: 0.95rem; color: #475569;">
+            <span style="background-color: #10b981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; flex-shrink: 0; margin-top: 2px;">6</span>
+            Aspire a quantidade prescrita de insulina. Verifique se há bolhas — se houver, bata levemente na seringa e empurre as bolhas para fora.
+        </li>
+        <li style="display: flex; gap: 1rem; align-items: flex-start; font-size: 0.95rem; color: #475569;">
+            <span style="background-color: #10b981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; flex-shrink: 0; margin-top: 2px;">7</span>
+            Escolha o local de aplicação: abdome (absorção mais rápida), coxa, braço ou nádegas.
+        </li>
+        <li style="display: flex; gap: 1rem; align-items: flex-start; font-size: 0.95rem; color: #475569;">
+            <span style="background-color: #10b981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; flex-shrink: 0; margin-top: 2px;">8</span>
+            Faça uma prega na pele com os dedos.
+        </li>
+        <li style="display: flex; gap: 1rem; align-items: flex-start; font-size: 0.95rem; color: #475569;">
+            <span style="background-color: #10b981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; flex-shrink: 0; margin-top: 2px;">9</span>
+            Insira a agulha em ângulo de 90° (ou 45° se muito magro).
+        </li>
+        <li style="display: flex; gap: 1rem; align-items: flex-start; font-size: 0.95rem; color: #475569;">
+            <span style="background-color: #10b981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; flex-shrink: 0; margin-top: 2px;">10</span>
+            Injete a insulina lentamente. Aguarde 5 segundos antes de retirar a agulha.
+        </li>
+        <li style="display: flex; gap: 1rem; align-items: flex-start; font-size: 0.95rem; color: #475569;">
+            <span style="background-color: #10b981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; flex-shrink: 0; margin-top: 2px;">11</span>
+            Não massageie o local após a aplicação.
+        </li>
+    </ul>
+    
+    <div style="background-color: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 1rem; margin-top: 1.5rem; display: flex; gap: 0.75rem; color: #92400e; font-size: 0.9rem;">
+        <span style="color: #d97706; font-weight: 700;">!</span>
+        <div><strong>Mistura de insulinas:</strong> Se prescrito NPH + Regular na mesma seringa, aspire SEMPRE a Regular primeiro (transparente) e depois a NPH (turva). Nunca ao contrário.</div>
+    </div>
+</div>
+
+<!-- Agulhas para seringa -->
+<div class="glass-card" style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0;">
+    <h3 style="color: #0f172a; font-size: 1.15rem; font-weight: 700; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+        <span style="color: #0ea5e9;">ⓘ</span> Agulhas para seringa
+    </h3>
+    <p style="font-size: 0.95rem; color: #334155; font-weight: 600; margin-bottom: 0.75rem;">Agulhas disponíveis:</p>
+    <ul style="margin-left: 1.5rem; font-size: 0.95rem; color: #475569; line-height: 1.6; margin-bottom: 1.5rem;">
+        <li><strong>8mm x 0,30mm</strong> — Para adultos com maior camada de gordura</li>
+        <li><strong>6mm x 0,25mm</strong> — Para a maioria dos adultos</li>
+        <li><strong>4mm ou 5mm</strong> — Para crianças e pessoas muito magras</li>
+    </ul>
+
+    <div style="background-color: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 1rem; display: flex; gap: 0.75rem; color: #92400e; font-size: 0.9rem;">
+        <span style="color: #d97706; font-weight: 700;">!</span>
+        <div>Seringas e agulhas são de uso ÚNICO. Não reutilize. Descarte em recipiente rígido (coletor de perfurocortantes).</div>
+    </div>
+</div>
+
+<!-- Armazenamento -->
+<div class="glass-card" style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0;">
+    <h3 style="color: #0f172a; font-size: 1.15rem; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+        <span style="color: #14b8a6;">🌡️</span> Armazenamento da Insulina
+    </h3>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+        <div>
+            <p style="font-size: 0.95rem; color: #334155; font-weight: 600; margin-bottom: 0.75rem;">Frasco/Refil em uso:</p>
+            <ul style="margin-left: 1.25rem; font-size: 0.95rem; color: #475569; line-height: 1.6;">
+                <li>Temperatura ambiente (15 a 30°C)</li>
+                <li>Válido por até 30 dias após aberto</li>
+                <li>Evitar exposição direta ao sol e calor</li>
+            </ul>
+        </div>
+        <div>
+            <p style="font-size: 0.95rem; color: #334155; font-weight: 600; margin-bottom: 0.75rem;">Estoque (sem uso):</p>
+            <ul style="margin-left: 1.25rem; font-size: 0.95rem; color: #475569; line-height: 1.6;">
+                <li>Geladeira: 2 a 8°C (porta da geladeira NÃO)</li>
+                <li>Guardar na parte baixa da geladeira</li>
+                <li>Nunca congelar — se congelou, descarte</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Rodízio -->
+<div class="glass-card" style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0;">
+    <h3 style="color: #0f172a; font-size: 1.15rem; font-weight: 700; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+        <span style="color: #10b981;">ⓘ</span> Rodízio dos Locais de Aplicação
+    </h3>
+    <p style="font-size: 0.95rem; color: #64748b; margin-bottom: 1.5rem;">
+        É fundamental alternar os locais de aplicação para evitar lipodistrofia (nódulos ou depressões na pele).
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+        <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem; text-align: center;">
+            <div style="font-weight: 700; color: #334155; margin-bottom: 0.5rem; font-size: 0.95rem;">Abdome</div>
+            <div style="font-size: 0.85rem; color: #64748b;">Absorção mais rápida. Ideal para insulina Regular.</div>
+        </div>
+        <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem; text-align: center;">
+            <div style="font-weight: 700; color: #334155; margin-bottom: 0.5rem; font-size: 0.95rem;">Coxas</div>
+            <div style="font-size: 0.85rem; color: #64748b;">Absorção intermediária. Bom para NPH noturna.</div>
+        </div>
+        <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem; text-align: center;">
+            <div style="font-weight: 700; color: #334155; margin-bottom: 0.5rem; font-size: 0.95rem;">Braços</div>
+            <div style="font-size: 0.85rem; color: #64748b;">Parte posterior. Absorção intermediária.</div>
+        </div>
+        <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem; text-align: center;">
+            <div style="font-weight: 700; color: #334155; margin-bottom: 0.5rem; font-size: 0.95rem;">Nádegas</div>
+            <div style="font-size: 0.85rem; color: #64748b;">Absorção mais lenta. Bom para NPH.</div>
+        </div>
+    </div>
+
+    <div style="background-color: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 1rem; display: flex; gap: 0.75rem; color: #92400e; font-size: 0.9rem;">
+        <span style="color: #d97706; font-weight: 700;">!</span>
+        <div>Mantenha distância de pelo menos 2 cm entre cada aplicação no mesmo local. Alterne os locais de forma sistematizada.</div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.getElementById('nav-insulina').classList.add('active');
+</script>
+{% endblock %}

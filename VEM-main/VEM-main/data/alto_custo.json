@@ -1,0 +1,692 @@
+[
+  {
+    "nome": "Abatacepte 125mg/mL Injetável (Seringa Preenchida)",
+    "indicacao": "Artrite Reumatoide (≥18 anos)",
+    "cids": "M05.0-M06.8"
+  },
+  {
+    "nome": "Abatacepte 250mg Injetável (Frasco Ampola)",
+    "indicacao": "Artrite Idiopática Juvenil (≥6 anos)",
+    "cids": "M08.0-M08.9"
+  },
+  {
+    "nome": "Ácido Ursodesoxicólico 150mg Comprimido",
+    "indicacao": "Colangite Biliar Primária",
+    "cids": "K74.3"
+  },
+  {
+    "nome": "Ácido Ursodesoxicólico 300mg Comprimido",
+    "indicacao": "Colangite Biliar Primária",
+    "cids": "K74.3"
+  },
+  {
+    "nome": "Ácido Zoledrônico 0,05mg/mL Frasco 100mL",
+    "indicacao": "Doença de Paget / Osteoporose (≥18 anos)",
+    "cids": "M88.0, M80-M82, M85.8"
+  },
+  {
+    "nome": "Acitretina 10mg Cápsula",
+    "indicacao": "Psoríase / Ptiríase / Ictioses",
+    "cids": "L40, L44.0, Q80, Q82.8"
+  },
+  {
+    "nome": "Acitretina 25mg Cápsula",
+    "indicacao": "Psoríase / Ptiríase / Ictioses",
+    "cids": "L40, L44.0, Q80, Q82.8"
+  },
+  {
+    "nome": "Adalimumabe 40mg Injetável (Seringa Preenchida)",
+    "indicacao": "Artrite Reumatoide / AIJ / Espondilite / Crohn / Psoríase",
+    "cids": "M05-M08, M45, K50, L40, L73.2, H15-H30"
+  },
+  {
+    "nome": "Alentuzumabe 10mg/mL Injetável",
+    "indicacao": "Esclerose Múltipla (≥18 anos)",
+    "cids": "G35"
+  },
+  {
+    "nome": "Alfa-alglicosidase 50mg Injetável",
+    "indicacao": "Doença de Pompe",
+    "cids": "E74.0"
+  },
+  {
+    "nome": "Alfagalsidase 1mg/mL Frasco Ampola 3,5mL",
+    "indicacao": "Doença de Fabry",
+    "cids": "E75.2"
+  },
+  {
+    "nome": "Alfadornase 2,5mg Solução para Inalação",
+    "indicacao": "Fibrose Cística",
+    "cids": "E84.0, E84.8"
+  },
+  {
+    "nome": "Alentuzumabe 12mg Frasco",
+    "indicacao": "Esclerose Múltipla",
+    "cids": "G35"
+  },
+  {
+    "nome": "Amlodipino 5mg",
+    "indicacao": "Angina de peito / Hipertensão",
+    "cids": "I10"
+  },
+  {
+    "nome": "Ampristina 100mg",
+    "indicacao": "Imunossupressão em Transplantes",
+    "cids": "Z94"
+  },
+  {
+    "nome": "Atorvastatina 10mg",
+    "indicacao": "Dislipidemia / Prevenção Cardiovascular",
+    "cids": "E78.0"
+  },
+  {
+    "nome": "Atorvastatina 20mg",
+    "indicacao": "Dislipidemia / Prevenção Cardiovascular",
+    "cids": "E78.0"
+  },
+  {
+    "nome": "Atorvastatina 40mg",
+    "indicacao": "Dislipidemia / Prevenção Cardiovascular",
+    "cids": "E78.0"
+  },
+  {
+    "nome": "Atorvastatina 80mg",
+    "indicacao": "Dislipidemia / Prevenção Cardiovascular",
+    "cids": "E78.0"
+  },
+  {
+    "nome": "Azatioprina 50mg",
+    "indicacao": "Artrite Reumatoide / Lúpus / Crohn",
+    "cids": "M05, M32, K50"
+  },
+  {
+    "nome": "Betainterferona 1a 22mcg",
+    "indicacao": "Esclerose Múltipla",
+    "cids": "G35"
+  },
+  {
+    "nome": "Betainterferona 1a 44mcg",
+    "indicacao": "Esclerose Múltipla",
+    "cids": "G35"
+  },
+  {
+    "nome": "Betainterferona 1a 30mcg (Avonex)",
+    "indicacao": "Esclerose Múltipla",
+    "cids": "G35"
+  },
+  {
+    "nome": "Betainterferona 1b 300mcg (Betaferon)",
+    "indicacao": "Esclerose Múltipla",
+    "cids": "G35"
+  },
+  {
+    "nome": "Bortezomibe 3.5mg Frasco",
+    "indicacao": "Mieloma Múltiplo",
+    "cids": "C90.0"
+  },
+  {
+    "nome": "Bosentana 125mg Comprimido",
+    "indicacao": "Hipertensão Arterial Pulmonar",
+    "cids": "I27.0"
+  },
+  {
+    "nome": "Bosentana 62.5mg Comprimido",
+    "indicacao": "Hipertensão Arterial Pulmonar",
+    "cids": "I27.0"
+  },
+  {
+    "nome": "Bromocriptina 2.5mg Comprimido",
+    "indicacao": "Adenomia Hipofisário / Parkinson",
+    "cids": "G20, E22.0"
+  },
+  {
+    "nome": "Cabergolina 0.5mg Comprimido",
+    "indicacao": "Hiperprolactonemia",
+    "cids": "E22.1"
+  },
+  {
+    "nome": "Certolizumabe Pegol 200mg/mL",
+    "indicacao": "Artrite Reumatoide / Crohn / Espondilite",
+    "cids": "M05, K50, M45"
+  },
+  {
+    "nome": "Ciclofosfamida 50mg Comprimido",
+    "indicacao": "Lúpus Eritematoso Sistêmico / Vasculites",
+    "cids": "M32, M30"
+  },
+  {
+    "nome": "Ciclofosfamida 500mg Injetável",
+    "indicacao": "Lúpus Eritematoso Sistêmico / Vasculites",
+    "cids": "M32, M30"
+  },
+  {
+    "nome": "Ciclosporina 100mg Cápsula",
+    "indicacao": "Transplantes / Psoríase grave",
+    "cids": "Z94, L40"
+  },
+  {
+    "nome": "Ciclosporina 25mg Cápsula",
+    "indicacao": "Transplantes / Psoríase grave",
+    "cids": "Z94, L40"
+  },
+  {
+    "nome": "Ciclosporina 50mg Cápsula",
+    "indicacao": "Transplantes / Psoríase grave",
+    "cids": "Z94, L40"
+  },
+  {
+    "nome": "Ciproterona 50mg Comprimido",
+    "indicacao": "Hirsutismo grave / Puberdade precoce",
+    "cids": "L68.0, E30.1"
+  },
+  {
+    "nome": "Clobazam 10mg Comprimido",
+    "indicacao": "Epilepsia Refratária",
+    "cids": "G40"
+  },
+  {
+    "nome": "Clobazam 20mg Comprimido",
+    "indicacao": "Epilepsia Refratária",
+    "cids": "G40"
+  },
+  {
+    "nome": "Clopidogrel 75mg Comprimido",
+    "indicacao": "Prevenção de eventos aterotrombóticos",
+    "cids": "I74, I21"
+  },
+  {
+    "nome": "Clozapina 100mg Comprimido",
+    "indicacao": "Esquizofrenia Refratária",
+    "cids": "F20"
+  },
+  {
+    "nome": "Clozapina 25mg Comprimido",
+    "indicacao": "Esquizofrenia Refratária",
+    "cids": "F20"
+  },
+  {
+    "nome": "Danazol 100mg Cápsula",
+    "indicacao": "Endometriose",
+    "cids": "N80"
+  },
+  {
+    "nome": "Danazol 200mg Cápsula",
+    "indicacao": "Endometriose",
+    "cids": "N80"
+  },
+  {
+    "nome": "Deferasirox 125mg Comprimido dispersível",
+    "indicacao": "Sobrecarga de ferro crônica",
+    "cids": "E83.1"
+  },
+  {
+    "nome": "Deferasirox 250mg Comprimido dispersível",
+    "indicacao": "Sobrecarga de ferro crônica",
+    "cids": "E83.1"
+  },
+  {
+    "nome": "Deferasirox 500mg Comprimido dispersível",
+    "indicacao": "Sobrecarga de ferro crônica",
+    "cids": "E83.1"
+  },
+  {
+    "nome": "Deferoxamina 500mg Injetável",
+    "indicacao": "Sobrecarga de ferro crônica",
+    "cids": "E83.1"
+  },
+  {
+    "nome": "Desmopressina 0.1mg/mL Spray Nasal",
+    "indicacao": "Diabetes Insipidus",
+    "cids": "E23.2"
+  },
+  {
+    "nome": "Desmopressina 0.1mg Comprimido",
+    "indicacao": "Diabetes Insipidus / Enurese",
+    "cids": "E23.2"
+  },
+  {
+    "nome": "Desmopressina 0.2mg Comprimido",
+    "indicacao": "Diabetes Insipidus / Enurese",
+    "cids": "E23.2"
+  },
+  {
+    "nome": "Dimetilfumarato 120mg Cápsula",
+    "indicacao": "Esclerose Múltipla",
+    "cids": "G35"
+  },
+  {
+    "nome": "Dimetilfumarato 240mg Cápsula",
+    "indicacao": "Esclerose Múltipla",
+    "cids": "G35"
+  },
+  {
+    "nome": "Donepezila 10mg Comprimido",
+    "indicacao": "Doença de Alzheimer (leve a moderada)",
+    "cids": "G30"
+  },
+  {
+    "nome": "Donepezila 5mg Comprimido",
+    "indicacao": "Doença de Alzheimer (leve a moderada)",
+    "cids": "G30"
+  },
+  {
+    "nome": "Dupilumabe 300mg Injetável",
+    "indicacao": "Dermatite Atópica grave / Asma grave",
+    "cids": "L20, J45"
+  },
+  {
+    "nome": "Enoxaparina 40mg Injetável",
+    "indicacao": "Trombose Venosa Profunda / Profilaxia",
+    "cids": "I82, I21"
+  },
+  {
+    "nome": "Enoxaparina 60mg Injetável",
+    "indicacao": "Trombose Venosa Profunda / Profilaxia",
+    "cids": "I82, I21"
+  },
+  {
+    "nome": "Entacapona 200mg Comprimido",
+    "indicacao": "Doença de Parkinson",
+    "cids": "G20"
+  },
+  {
+    "nome": "Epoetina Alfa 1000 UI Injetável",
+    "indicacao": "Anemia por Insuficiência Renal Crônica",
+    "cids": "N18, D63.8"
+  },
+  {
+    "nome": "Epoetina Alfa 2000 UI Injetável",
+    "indicacao": "Anemia por Insuficiência Renal Crônica",
+    "cids": "N18, D63.8"
+  },
+  {
+    "nome": "Epoetina Alfa 4000 UI Injetável",
+    "indicacao": "Anemia por Insuficiência Renal Crônica",
+    "cids": "N18, D63.8"
+  },
+  {
+    "nome": "Epoetina Alfa 10000 UI Injetável",
+    "indicacao": "Anemia por Insuficiência Renal Crônica",
+    "cids": "N18, D63.8"
+  },
+  {
+    "nome": "Erlotinibe 100mg Comprimido",
+    "indicacao": "Câncer de Pulmão de Células Não Pequenas",
+    "cids": "C34"
+  },
+  {
+    "nome": "Erlotinibe 150mg Comprimido",
+    "indicacao": "Câncer de Pulmão de Células Não Pequenas",
+    "cids": "C34"
+  },
+  {
+    "nome": "Etanercepte 50mg Injetável",
+    "indicacao": "Artrite Reumatoide / Espondilite / Psoríase",
+    "cids": "M05, M45, L40"
+  },
+  {
+    "nome": "Everolimo 0.5mg Comprimido",
+    "indicacao": "Imunossupressão pós-transplante",
+    "cids": "Z94"
+  },
+  {
+    "nome": "Everolimo 0.75mg Comprimido",
+    "indicacao": "Imunossupressão pós-transplante",
+    "cids": "Z94"
+  },
+  {
+    "nome": "Everolimo 1mg Comprimido",
+    "indicacao": "Imunossupressão pós-transplante",
+    "cids": "Z94"
+  },
+  {
+    "nome": "Filgrastim 300mcg Injetável",
+    "indicacao": "Neutropenia induzida por quimioterapia",
+    "cids": "D70"
+  },
+  {
+    "nome": "Fingolimode 0.5mg Cápsula",
+    "indicacao": "Esclerose Múltipla",
+    "cids": "G35"
+  },
+  {
+    "nome": "Fludrocortisona 0.1mg Comprimido",
+    "indicacao": "Insuficiência Adrenal (D. de Addison)",
+    "cids": "E27.1"
+  },
+  {
+    "nome": "Fumarato de Formoterol + Budesonida 12/400mcg",
+    "indicacao": "Asma / DPOC",
+    "cids": "J45, J44"
+  },
+  {
+    "nome": "Fumarato de Formoterol + Budesonida 6/200mcg",
+    "indicacao": "Asma / DPOC",
+    "cids": "J45, J44"
+  },
+  {
+    "nome": "Gabapentina 300mg Cápsula",
+    "indicacao": "Dor Neuropática",
+    "cids": "G62.9"
+  },
+  {
+    "nome": "Gabapentina 400mg Cápsula",
+    "indicacao": "Dor Neuropática",
+    "cids": "G62.9"
+  },
+  {
+    "nome": "Galantamina 16mg Cápsula liberação prolongada",
+    "indicacao": "Doença de Alzheimer",
+    "cids": "G30"
+  },
+  {
+    "nome": "Galantamina 24mg Cápsula liberação prolongada",
+    "indicacao": "Doença de Alzheimer",
+    "cids": "G30"
+  },
+  {
+    "nome": "Galantamina 8mg Cápsula liberação prolongada",
+    "indicacao": "Doença de Alzheimer",
+    "cids": "G30"
+  },
+  {
+    "nome": "Galsulfase 5mg/5mL Frasco Ampola",
+    "indicacao": "Mucopolissacaridose VI",
+    "cids": "E76.2"
+  },
+  {
+    "nome": "Glatirâmer 40mg/mL Injetável",
+    "indicacao": "Esclerose Múltipla",
+    "cids": "G35"
+  },
+  {
+    "nome": "Golimumabe 50mg Injetável",
+    "indicacao": "Artrite Reumatoide / Colite Ulcerativa",
+    "cids": "M05, K51"
+  },
+  {
+    "nome": "Goserelina 10.8mg Implante subcutâneo",
+    "indicacao": "Neoplasia de próstata / Endometriose",
+    "cids": "C61, N80"
+  },
+  {
+    "nome": "Goserelina 3.6mg Implante subcutâneo",
+    "indicacao": "Neoplasia de próstata / Endometriose",
+    "cids": "C61, N80"
+  },
+  {
+    "nome": "Hidroxicloroquina 400mg Comprimido",
+    "indicacao": "Lúpus / Artrite Reumatoide",
+    "cids": "M32, M05"
+  },
+  {
+    "nome": "Ilaris (Canaquinumabe) 150mg Injetável",
+    "indicacao": "Síndromes Periódicas Associadas à Criopirina",
+    "cids": "M04.2"
+  },
+  {
+    "nome": "Imatinibe 100mg Comprimido",
+    "indicacao": "Leucemia Mieloide Crônica",
+    "cids": "C92.1"
+  },
+  {
+    "nome": "Imatinibe 400mg Comprimido",
+    "indicacao": "Leucemia Mieloide Crônica",
+    "cids": "C92.1"
+  },
+  {
+    "nome": "Imunoglobulina Humana 5g Injetável",
+    "indicacao": "Imunodeficiência Primária / Guillain-Barré",
+    "cids": "D80, G61.0"
+  },
+  {
+    "nome": "Infliximabe 100mg Pó Liofilizado",
+    "indicacao": "Crohn / Colite / Artrite / Psoríase",
+    "cids": "K50, K51, M05, L40"
+  },
+  {
+    "nome": "Insulina Asparte Caneta",
+    "indicacao": "Diabetes Mellitus Tipo 1 e Tipo 2",
+    "cids": "E10, E11"
+  },
+  {
+    "nome": "Insulina Detemir Caneta",
+    "indicacao": "Diabetes Mellitus Tipo 1 e Tipo 2",
+    "cids": "E10, E11"
+  },
+  {
+    "nome": "Insulina Glargina Caneta",
+    "indicacao": "Diabetes Mellitus Tipo 1 e Tipo 2",
+    "cids": "E10, E11"
+  },
+  {
+    "nome": "Insulina Glulisina Caneta",
+    "indicacao": "Diabetes Mellitus Tipo 1 e Tipo 2",
+    "cids": "E10, E11"
+  },
+  {
+    "nome": "Insulina Lispro Caneta",
+    "indicacao": "Diabetes Mellitus Tipo 1 e Tipo 2",
+    "cids": "E10, E11"
+  },
+  {
+    "nome": "Lansoprazol 30mg Cápsula",
+    "indicacao": "Refluxo gastroesofágico grave",
+    "cids": "K21.0"
+  },
+  {
+    "nome": "Leflunomida 20mg Comprimido",
+    "indicacao": "Artrite Reumatoide",
+    "cids": "M05"
+  },
+  {
+    "nome": "Leuprorelina 11.25mg Injetável",
+    "indicacao": "Câncer de Próstata / Puberdade Precoce",
+    "cids": "C61, E30.1"
+  },
+  {
+    "nome": "Leuprorelina 3.75mg Injetável",
+    "indicacao": "Câncer de Próstata / Puberdade Precoce",
+    "cids": "C61, E30.1"
+  },
+  {
+    "nome": "Levodopa + Carbidopa 200/50mg Comprimido",
+    "indicacao": "Doença de Parkinson",
+    "cids": "G20"
+  },
+  {
+    "nome": "Levodopa + Benserazida 200/50mg Comprimido",
+    "indicacao": "Doença de Parkinson",
+    "cids": "G20"
+  },
+  {
+    "nome": "Mesalazina 400mg Comprimido",
+    "indicacao": "Retocolite Ulcerativa / D. de Crohn",
+    "cids": "K51, K50"
+  },
+  {
+    "nome": "Mesalazina 800mg Comprimido",
+    "indicacao": "Retocolite Ulcerativa / D. de Crohn",
+    "cids": "K51, K50"
+  },
+  {
+    "nome": "Mesalazina 1000mg Supositório",
+    "indicacao": "Proctite Ulcerativa",
+    "cids": "K51.2"
+  },
+  {
+    "nome": "Metotrexato 2.5mg Comprimido",
+    "indicacao": "Artrite Reumatoide / Psoríase",
+    "cids": "M05, L40"
+  },
+  {
+    "nome": "Miglustate 100mg Cápsula",
+    "indicacao": "Doença de Gaucher Tipo 1",
+    "cids": "E75.2"
+  },
+  {
+    "nome": "Natalizumabe 300mg Injetável",
+    "indicacao": "Esclerose Múltipla recorrente-remitente",
+    "cids": "G35"
+  },
+  {
+    "nome": "Octreotida 20mg Injetável",
+    "indicacao": "Acromegalia / Tumores Neuroendócrinos",
+    "cids": "E22.0, C75"
+  },
+  {
+    "nome": "Octreotida 30mg Injetável",
+    "indicacao": "Acromegalia / Tumores Neuroendócrinos",
+    "cids": "E22.0, C75"
+  },
+  {
+    "nome": "Olanzapina 10mg Comprimido",
+    "indicacao": "Esquizofrenia / Transtorno Bipolar",
+    "cids": "F20, F31"
+  },
+  {
+    "nome": "Olanzapina 5mg Comprimido",
+    "indicacao": "Esquizofrenia / Transtorno Bipolar",
+    "cids": "F20, F31"
+  },
+  {
+    "nome": "Omalizumabe 150mg Injetável",
+    "indicacao": "Asma alérgica grave / Urticária Crônica",
+    "cids": "J45.0, L50.8"
+  },
+  {
+    "nome": "Pramipexol 0.125mg Comprimido",
+    "indicacao": "Doença de Parkinson",
+    "cids": "G20"
+  },
+  {
+    "nome": "Pramipexol 0.25mg Comprimido",
+    "indicacao": "Doença de Parkinson",
+    "cids": "G20"
+  },
+  {
+    "nome": "Pramipexol 1mg Comprimido",
+    "indicacao": "Doença de Parkinson",
+    "cids": "G20"
+  },
+  {
+    "nome": "Quetiapina 100mg Comprimido",
+    "indicacao": "Esquizofrenia / Transtorno Bipolar",
+    "cids": "F20, F31"
+  },
+  {
+    "nome": "Quetiapina 200mg Comprimido",
+    "indicacao": "Esquizofrenia / Transtorno Bipolar",
+    "cids": "F20, F31"
+  },
+  {
+    "nome": "Quetiapina 25mg Comprimido",
+    "indicacao": "Esquizofrenia / Transtorno Bipolar",
+    "cids": "F20, F31"
+  },
+  {
+    "nome": "Raloxifeno 60mg Comprimido",
+    "indicacao": "Osteoporose em mulheres na pós-menopausa",
+    "cids": "M81.0"
+  },
+  {
+    "nome": "Riluzol 50mg Comprimido",
+    "indicacao": "Esclerose Lateral Amiotrófica (ELA)",
+    "cids": "G12.2"
+  },
+  {
+    "nome": "Risperidona 1mg Comprimido",
+    "indicacao": "Esquizofrenia / Autismo com irritabilidade",
+    "cids": "F20, F84.0"
+  },
+  {
+    "nome": "Risperidona 2mg Comprimido",
+    "indicacao": "Esquizofrenia / Autismo com irritabilidade",
+    "cids": "F20, F84.0"
+  },
+  {
+    "nome": "Risperidona 3mg Comprimido",
+    "indicacao": "Esquizofrenia / Autismo com irritabilidade",
+    "cids": "F20, F84.0"
+  },
+  {
+    "nome": "Rituximabe 100mg Injetável",
+    "indicacao": "Linfoma não-Hodgkin / Artrite Reumatoide",
+    "cids": "C82, M05"
+  },
+  {
+    "nome": "Rivastigmina 1.5mg Comprimido",
+    "indicacao": "Doença de Alzheimer",
+    "cids": "G30"
+  },
+  {
+    "nome": "Rivastigmina 3mg Comprimido",
+    "indicacao": "Doença de Alzheimer",
+    "cids": "G30"
+  },
+  {
+    "nome": "Rivastigmina 4.6mg/24h Adesivo Transdérmico",
+    "indicacao": "Doença de Alzheimer",
+    "cids": "G30"
+  },
+  {
+    "nome": "Rivastigmina 9.5mg/24h Adesivo Transdérmico",
+    "indicacao": "Doença de Alzheimer",
+    "cids": "G30"
+  },
+  {
+    "nome": "Secuquinumabe 150mg Injetável",
+    "indicacao": "Psoríase em placas / Espondilite",
+    "cids": "L40, M45"
+  },
+  {
+    "nome": "Selegilina 5mg Comprimido",
+    "indicacao": "Doença de Parkinson",
+    "cids": "G20"
+  },
+  {
+    "nome": "Somatropina 12 UI Injetável (Hormônio de Crescimento)",
+    "indicacao": "Deficiência de GH / Síndrome de Turner",
+    "cids": "E23.0, Q96"
+  },
+  {
+    "nome": "Somatropina 4 UI Injetável",
+    "indicacao": "Deficiência de GH / Síndrome de Turner",
+    "cids": "E23.0, Q96"
+  },
+  {
+    "nome": "Tacrolimo 1mg Cápsula",
+    "indicacao": "Imunossupressão pós-transplante",
+    "cids": "Z94"
+  },
+  {
+    "nome": "Tacrolimo 5mg Cápsula",
+    "indicacao": "Imunossupressão pós-transplante",
+    "cids": "Z94"
+  },
+  {
+    "nome": "Tadalafila 20mg Comprimido",
+    "indicacao": "Hipertensão Arterial Pulmonar",
+    "cids": "I27.0"
+  },
+  {
+    "nome": "Teriflunomida 14mg Comprimido",
+    "indicacao": "Esclerose Múltipla",
+    "cids": "G35"
+  },
+  {
+    "nome": "Tocilizumabe 20mg/mL Injetável",
+    "indicacao": "Artrite Reumatoide grave",
+    "cids": "M05"
+  },
+  {
+    "nome": "Toxina Botulínica Tipo A 100 UI",
+    "indicacao": "Espasticidade focal / Distonia",
+    "cids": "G24, G80"
+  },
+  {
+    "nome": "Ustequinumabe 45mg Injetável",
+    "indicacao": "Psoríase em placas grave / D. de Crohn",
+    "cids": "L40, K50"
+  }
+]

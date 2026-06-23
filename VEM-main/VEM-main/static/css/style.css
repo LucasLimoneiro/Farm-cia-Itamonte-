@@ -1,0 +1,600 @@
+/* --- CSS variables for harmony & flexibility --- */
+:root {
+    --bg-gradient: linear-gradient(135deg, #eefcf6 0%, #e0f2fe 100%);
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --glass-bg: rgba(255, 255, 255, 0.65);
+    --glass-border: rgba(255, 255, 255, 0.5);
+    --glass-shadow: 0 8px 32px 0 rgba(15, 23, 42, 0.08);
+    --primary: #0f766e; /* Teal */
+    --primary-hover: #0d9488;
+    --primary-light: rgba(15, 118, 110, 0.1);
+    
+    /* Status Colors */
+    --status-disponivel-bg: #dcfce7;
+    --status-disponivel-text: #15803d;
+    --status-indisponivel-bg: #fee2e2;
+    --status-indisponivel-text: #b91c1c;
+    --status-baixo-bg: #fef9c3;
+    --status-baixo-text: #a16207;
+    --status-aguardando-bg: #dbeafe;
+    --status-aguardando-text: #1d4ed8;
+    --status-farmacia-popular-bg: #f3e8ff;
+    --status-farmacia-popular-text: #7e22ce;
+}
+
+/* --- Base Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+    background: var(--bg-gradient);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Layout & Glass Containers --- */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 2rem auto;
+    flex-grow: 1;
+}
+
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    box-shadow: var(--glass-shadow);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* --- Navigation Header --- */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 0.75rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-title-main {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1.1;
+}
+
+.nav-title-sub {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #2dd4bf; /* Teal color matching the image */
+    line-height: 1.1;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+
+.nav-links a svg {
+    stroke-width: 2;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    background-color: #ecfdf5; /* Light green */
+    color: #0f766e; /* Darker green */
+}
+
+.user-badge-container {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.user-name-simple {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.btn-logout-icon {
+    display: flex;
+    align-items: center;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.btn-logout-icon:hover {
+    color: var(--primary);
+}
+
+/* --- Form Fields & Elements --- */
+.form-group {
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    transition: border-color 0.2s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-secondary {
+    background-color: #e2e8f0;
+    color: #475569;
+}
+
+.btn-secondary:hover {
+    background-color: #cbd5e1;
+}
+
+/* --- Badges of Status --- */
+.badge-status {
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    border: 1px solid transparent;
+}
+
+.status-disponivel {
+    background-color: var(--status-disponivel-bg);
+    color: var(--status-disponivel-text);
+    border-color: rgba(21, 128, 61, 0.2);
+}
+
+.status-indisponivel {
+    background-color: var(--status-indisponivel-bg);
+    color: var(--status-indisponivel-text);
+    border-color: rgba(185, 28, 28, 0.2);
+}
+
+.status-baixo {
+    background-color: var(--status-baixo-bg);
+    color: var(--status-baixo-text);
+    border-color: rgba(161, 98, 7, 0.2);
+}
+
+.status-aguardando {
+    background-color: var(--status-aguardando-bg);
+    color: var(--status-aguardando-text);
+    border-color: rgba(29, 78, 216, 0.2);
+}
+
+.status-farmacia-popular {
+    background-color: var(--status-farmacia-popular-bg);
+    color: var(--status-farmacia-popular-text);
+    border-color: rgba(126, 34, 206, 0.2);
+}
+
+/* --- Cards Grid & Dashboard --- */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.card-pastel {
+    border-radius: 16px;
+    border: 1px solid #f1f5f9;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-decoration: none;
+    background: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.card-pastel:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.card-pastel-body {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-pastel-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+}
+
+.card-pastel-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.card-pastel-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.75rem;
+}
+
+.card-pastel-desc {
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.card-pastel-footer {
+    background: #fff;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0d9488;
+}
+
+.card-pastel-footer svg {
+    margin-left: 0.5rem;
+    width: 16px;
+    height: 16px;
+}
+
+/* Pastel Backgrounds */
+.bg-pastel-green { background-color: #ecfdf5; }
+.card-pastel-icon.text-green { color: #10b981; }
+
+.bg-pastel-blue { background-color: #eff6ff; }
+.card-pastel-icon.text-blue { color: #3b82f6; }
+
+.bg-pastel-purple { background-color: #faf5ff; }
+.card-pastel-icon.text-purple { color: #a855f7; }
+
+.bg-pastel-indigo { background-color: #f5f3ff; }
+.card-pastel-icon.text-indigo { color: #8b5cf6; }
+
+.bg-pastel-orange { background-color: #fff7ed; }
+.card-pastel-icon.text-orange { color: #f97316; }
+
+.bg-pastel-cyan { background-color: #ecfeff; }
+.card-pastel-icon.text-cyan { color: #06b6d4; }
+
+/* --- Tables & Lists --- */
+.table-responsive {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.data-table th, .data-table td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.data-table th {
+    background: rgba(0, 0, 0, 0.03);
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.data-table tr:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* --- Search & Filters Bar --- */
+.search-filter-bar {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.search-input-wrapper {
+    flex-grow: 1;
+    position: relative;
+}
+
+/* --- Login Page --- */
+.login-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.login-card {
+    max-width: 420px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.login-header {
+    margin-bottom: 1.5rem;
+}
+
+.login-header h1 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.login-header p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.error-message {
+    background-color: #fee2e2;
+    color: #ef4444;
+    border: 1px solid #fecaca;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+/* --- HTML Dialog / Modal --- */
+dialog {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+    background: white;
+}
+
+dialog::backdrop {
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(4px);
+}
+
+.dialog-header {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialog-header h3 {
+    font-size: 1.25rem;
+    color: var(--primary);
+}
+
+.dialog-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-secondary);
+}
+
+.dialog-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+/* --- Alerts and Feedback --- */
+.alert-toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    animation: slideIn 0.3s ease-out, fadeOut 0.3s ease-in 4.7s forwards;
+    border-left: 4px solid var(--primary);
+}
+
+.alert-toast.success {
+    border-left-color: #22c55e;
+}
+
+.alert-toast.error {
+    border-left-color: #ef4444;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+/* --- Interactive components --- */
+.accordion {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.accordion-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 1rem 0;
+}
+
+.accordion-header {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary);
+    cursor: pointer;
+    outline: none;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: 0.5rem;
+    color: var(--text-primary);
+    line-height: 1.5;
+}
+
+.accordion-header::after {
+    content: '+';
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.accordion-header.active::after {
+    content: '-';
+}
+
+/* --- Responsive Adaptations --- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .user-badge-container {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .container {
+        margin: 1rem auto;
+    }
+}

@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+
+{% block title %}Cessação do Tabagismo{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+    <div style="background-color: #eff6ff; color: #3b82f6; width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
+    </div>
+    <div style="flex-grow: 1;">
+        <h1 style="color: #0f172a; font-size: 1.5rem; font-weight: 800; margin: 0 0 0.25rem 0;">Programa de Cessação do Tabagismo</h1>
+        <p style="color: #64748b; font-size: 0.95rem; margin: 0;">Medicamentos disponíveis na Farmácia Municipal de Itamonte</p>
+    </div>
+</div>
+
+<!-- Info Alert -->
+<div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem; display: flex; align-items: flex-start; gap: 1rem;">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" style="flex-shrink: 0;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+    <div>
+        <h3 style="font-size: 1.05rem; color: #1e3a8a; font-weight: 700; margin: 0 0 0.5rem 0;">Programa Nacional de Controle do Tabagismo (PNCT)</h3>
+        <p style="font-size: 0.95rem; color: #1e40af; line-height: 1.5; margin: 0;">
+            Os medicamentos são fornecidos gratuitamente mediante inscrição no programa. O paciente deve estar vinculado a uma unidade de saúde (UBS) e participar das consultas e grupos de apoio. A combinação de terapia comportamental com farmacoterapia aumenta significativamente as taxas de abstinência.
+        </p>
+    </div>
+</div>
+
+<!-- Stats Row -->
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+    <div style="background: white; border: 1px solid #a7f3d0; border-radius: 12px; padding: 1.25rem; text-align: center; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);">
+        <div style="font-size: 2.5rem; font-weight: 800; color: #10b981; line-height: 1;">3</div>
+        <div style="font-size: 0.85rem; color: #64748b; font-weight: 500; margin-top: 0.5rem;">Adesivos TRN</div>
+    </div>
+    <div style="background: white; border: 1px solid #a7f3d0; border-radius: 12px; padding: 1.25rem; text-align: center; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);">
+        <div style="font-size: 2.5rem; font-weight: 800; color: #10b981; line-height: 1;">1</div>
+        <div style="font-size: 0.85rem; color: #64748b; font-weight: 500; margin-top: 0.5rem;">Goma de Mascar</div>
+    </div>
+    <div style="background: white; border: 1px solid #bfdbfe; border-radius: 12px; padding: 1.25rem; text-align: center; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);">
+        <div style="font-size: 2.5rem; font-weight: 800; color: #3b82f6; line-height: 1;">1</div>
+        <div style="font-size: 0.85rem; color: #64748b; font-weight: 500; margin-top: 0.5rem;">Farmacoterapia</div>
+    </div>
+</div>
+
+<!-- Medicines List -->
+<div style="display: flex; flex-direction: column; gap: 1.5rem; padding-bottom: 3rem;">
+    
+    <!-- Nicotina 7mg -->
+    <div style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 1rem;">
+            <h3 style="font-size: 1.1rem; color: #1e293b; font-weight: 700; margin: 0;">Nicotina 7mg — Adesivo</h3>
+            <span style="background: #d1fae5; color: #059669; border: 1px solid #a7f3d0; padding: 0.25rem 0.75rem; border-radius: 16px; font-size: 0.8rem; font-weight: 600; white-space: nowrap;">TRN — Adesivo</span>
+        </div>
+        <div style="margin-bottom: 1rem;">
+            <div style="font-size: 0.75rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem;">Posologia</div>
+            <div style="font-size: 0.9rem; color: #475569; line-height: 1.5;">1 adesivo/dia (24h) por 4–6 semanas. Etapa final do desmame gradual.</div>
+        </div>
+        <div style="margin-bottom: 1.25rem;">
+            <div style="font-size: 0.75rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem;">Indicação</div>
+            <div style="font-size: 0.9rem; color: #475569; line-height: 1.5;">Terapia de Reposição de Nicotina (TRN) para dependentes leves ou como etapa final do desmame nas terapias de redução gradual. Indicado para fumantes que consomem menos de 10 cigarros/dia ou na fase de retirada após uso das doses maiores.</div>
+        </div>
+        <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 0.75rem 1rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" style="flex-shrink: 0; margin-top: 0.1rem;"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            <div style="font-size: 0.85rem; color: #92400e; line-height: 1.4;">
+                Aplicar em pele íntegra, sem pelos, seca e limpa (tórax, braço ou costas). Trocar o local diariamente. Retirar antes de deitar se causar insônia.
+            </div>
+        </div>
+    </div>
+
+    <!-- Nicotina 14mg -->
+    <div style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 1rem;">
+            <h3 style="font-size: 1.1rem; color: #1e293b; font-weight: 700; margin: 0;">Nicotina 14mg — Adesivo</h3>
+            <span style="background: #d1fae5; color: #059669; border: 1px solid #a7f3d0; padding: 0.25rem 0.75rem; border-radius: 16px; font-size: 0.8rem; font-weight: 600; white-space: nowrap;">TRN — Adesivo</span>
+        </div>
+        <div style="margin-bottom: 1rem;">
+            <div style="font-size: 0.75rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem;">Posologia</div>
+            <div style="font-size: 0.9rem; color: #475569; line-height: 1.5;">1 adesivo/dia (24h) por 4–6 semanas. Etapa intermediária.</div>
+        </div>
+        <div style="margin-bottom: 1.25rem;">
+            <div style="font-size: 0.75rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem;">Indicação</div>
+            <div style="font-size: 0.9rem; color: #475569; line-height: 1.5;">Terapia de Reposição de Nicotina intermediária para dependentes moderados (10–20 cigarros/dia) ou como etapa após redução do adesivo de 21mg.</div>
+        </div>
+        <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 0.75rem 1rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" style="flex-shrink: 0; margin-top: 0.1rem;"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            <div style="font-size: 0.85rem; color: #92400e; line-height: 1.4;">
+                Mesmas orientações de aplicação do adesivo 7mg. Manter rotação de locais para evitar irritação cutânea.
+            </div>
+        </div>
+    </div>
+
+    <!-- Nicotina 21mg -->
+    <div style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 1rem;">
+            <h3 style="font-size: 1.1rem; color: #1e293b; font-weight: 700; margin: 0;">Nicotina 21mg — Adesivo</h3>
+            <span style="background: #d1fae5; color: #059669; border: 1px solid #a7f3d0; padding: 0.25rem 0.75rem; border-radius: 16px; font-size: 0.8rem; font-weight: 600; white-space: nowrap;">TRN — Adesivo</span>
+        </div>
+        <div style="margin-bottom: 1rem;">
+            <div style="font-size: 0.75rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem;">Posologia</div>
+            <div style="font-size: 0.9rem; color: #475569; line-height: 1.5;">1 adesivo/dia (24h) por 4 semanas. Etapa inicial para fumantes pesados.</div>
+        </div>
+        <div style="margin-bottom: 1.25rem;">
+            <div style="font-size: 0.75rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem;">Indicação</div>
+            <div style="font-size: 0.9rem; color: #475569; line-height: 1.5;">Terapia de Reposição de Nicotina inicial para fumantes de mais de 20 cigarros/dia ou com alta dependência (FTND ≥ 5). Reduz os sintomas de abstinência e a fissura.</div>
+        </div>
+        <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 0.75rem 1rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" style="flex-shrink: 0; margin-top: 0.1rem;"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            <div style="font-size: 0.85rem; color: #92400e; line-height: 1.4;">
+                Iniciar na manhã do dia de parada. Progressão: 21mg → 14mg → 7mg (redução a cada 4–6 semanas). Não fumar enquanto usar o adesivo (risco de superdosagem nicotínica).
+            </div>
+        </div>
+    </div>
+
+    <!-- Nicorette -->
+    <div style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 1rem;">
+            <h3 style="font-size: 1.1rem; color: #1e293b; font-weight: 700; margin: 0;">Nicorette — Goma de Mascar 2mg / 4mg</h3>
+            <span style="background: #ccfbf1; color: #0f766e; border: 1px solid #99f6e4; padding: 0.25rem 0.75rem; border-radius: 16px; font-size: 0.8rem; font-weight: 600; white-space: nowrap;">TRN — Goma</span>
+        </div>
+        <div style="margin-bottom: 1rem;">
+            <div style="font-size: 0.75rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem;">Posologia</div>
+            <div style="font-size: 0.9rem; color: #475569; line-height: 1.5;">1 goma quando houver fissura (máx. 24 gomas/dia). Usar por 12 semanas com redução gradual.</div>
+        </div>
+        <div style="margin-bottom: 1.25rem;">
+            <div style="font-size: 0.75rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem;">Indicação</div>
+            <div style="font-size: 0.9rem; color: #475569; line-height: 1.5;">TRN de curta duração para alívio imediato da fissura por nicotina. Pode ser combinada com adesivos (terapia combinada). 4mg para fumantes de mais de 25 cigarros/dia; 2mg para os demais.</div>
+        </div>
+        <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 0.75rem 1rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" style="flex-shrink: 0; margin-top: 0.1rem;"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            <div style="font-size: 0.85rem; color: #92400e; line-height: 1.4;">
+                Técnica "morder e segurar": morder levemente até sentir sabor forte, segurar na bochecha por 1 min, repetir. Não mastigar continuamente. Evitar comer ou beber 15 min antes de usar. Não usar com próteses dentárias.
+            </div>
+        </div>
+    </div>
+
+    <!-- Bupropiona -->
+    <div style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 1rem;">
+            <h3 style="font-size: 1.1rem; color: #1e293b; font-weight: 700; margin: 0;">Bupropiona 150mg</h3>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <span style="background: #dbeafe; color: #1d4ed8; border: 1px solid #bfdbfe; padding: 0.25rem 0.75rem; border-radius: 16px; font-size: 0.8rem; font-weight: 600; white-space: nowrap;">Farmacoterapia</span>
+                <span style="background: #fee2e2; color: #b91c1c; border: 1px solid #fecaca; padding: 0.25rem 0.75rem; border-radius: 16px; font-size: 0.8rem; font-weight: 600; white-space: nowrap;">Tarja Preta</span>
+            </div>
+        </div>
+        <div style="margin-bottom: 1rem;">
+            <div style="font-size: 0.75rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem;">Posologia</div>
+            <div style="font-size: 0.9rem; color: #475569; line-height: 1.5;">150mg/dia por 3 dias, depois 150mg 2x/dia (intervalo ≥ 8h). Iniciar 1–2 semanas antes da data de parada. Duração: 7–12 semanas.</div>
+        </div>
+        <div style="margin-bottom: 1.25rem;">
+            <div style="font-size: 0.75rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem;">Indicação</div>
+            <div style="font-size: 0.9rem; color: #475569; line-height: 1.5;">Tratamento farmacológico da dependência ao tabaco. Antidepressivo que reduz o desejo de fumar e os sintomas de abstinência. Primeira linha de tratamento, podendo ser combinado com TRN. Especialmente útil em pacientes com humor deprimido associado ao tabagismo.</div>
+        </div>
+        <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 0.75rem 1rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" style="flex-shrink: 0; margin-top: 0.1rem;"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            <div style="font-size: 0.85rem; color: #92400e; line-height: 1.4;">
+                Contraindicada em epilepsia, bulimia, anorexia nervosa, uso de IMAO, alcoolismo grave e histórico de convulsões. Dose noturna no máximo às 17h para evitar insônia. Dispensação exige receita de controle especial (tarja preta).
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.getElementById('nav-tabagismo').classList.add('active');
+</script>
+{% endblock %}

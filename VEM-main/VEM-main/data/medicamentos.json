@@ -1,0 +1,1136 @@
+[
+  {
+    "nome": "Ácido Acetilsalicílico 100mg",
+    "classificacao": "ANALGÉSICOS E ANTIPIRÉTICOS",
+    "posologia": "1 cp/dia (antiagregante plaquetário)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Dipirona 500mg cp",
+    "classificacao": "ANALGÉSICOS E ANTIPIRÉTICOS",
+    "posologia": "500-1000mg a cada 6-8h (máx. 4g/dia)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Dipirona 500mg/mL gotas",
+    "classificacao": "ANALGÉSICOS E ANTIPIRÉTICOS",
+    "posologia": "20-40 gotas a cada 6-8h (adultos)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Paracetamol 500mg",
+    "classificacao": "ANALGÉSICOS E ANTIPIRÉTICOS",
+    "posologia": "500-1000mg a cada 6-8h (máx. 4g/dia)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Paracetamol gotas",
+    "classificacao": "ANALGÉSICOS E ANTIPIRÉTICOS",
+    "posologia": "40mg/kg/dia dividido a cada 6h (crianças)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Ibuprofeno 600mg",
+    "classificacao": "ANTI-INFLAMATÓRIOS NÃO ESTEROIDAIS (AINEs)",
+    "posologia": "400-600mg a cada 6-8h, com alimento",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Ibuprofeno gotas",
+    "classificacao": "ANTI-INFLAMATÓRIOS NÃO ESTEROIDAIS (AINEs)",
+    "posologia": "5-10mg/kg/dose a cada 6-8h (crianças)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Nimesulida 100mg",
+    "classificacao": "ANTI-INFLAMATÓRIOS NÃO ESTEROIDAIS (AINEs)",
+    "posologia": "100mg a cada 12h, com alimento (adultos)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Captopril 25mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — IECA",
+    "posologia": "25-50mg a cada 8-12h",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Enalapril Maleato 5mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — IECA",
+    "posologia": "5-40mg/dia em 1-2 doses",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Enalapril Maleato 10mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — IECA",
+    "posologia": "10-40mg/dia em 1-2 doses",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Enalapril Maleato 20mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — IECA",
+    "posologia": "20-40mg/dia em 1-2 doses",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Losartana Potássica 50mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — BRA",
+    "posologia": "50-100mg/dia em 1-2 doses",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Besilato de Anlodipino 5mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — BLOQUEADORES DOS CANAIS DE CÁLCIO",
+    "posologia": "5-10mg/dia, 1x/dia",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Cloridrato de Verapamil 80mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — BLOQUEADORES DOS CANAIS DE CÁLCIO",
+    "posologia": "80-120mg a cada 8h",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Atenolol 50mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — BETABLOQUEADORES",
+    "posologia": "25-100mg/dia, 1x/dia",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Carvedilol 3,125mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — BETABLOQUEADORES",
+    "posologia": "3,125-25mg a cada 12h (iniciar com dose baixa)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Carvedilol 6,25mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — BETABLOQUEADORES",
+    "posologia": "6,25-25mg a cada 12h",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Carvedilol 12,5mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — BETABLOQUEADORES",
+    "posologia": "12,5-25mg a cada 12h",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Carvedilol 25mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — BETABLOQUEADORES",
+    "posologia": "25mg a cada 12h",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Propranolol 40mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — BETABLOQUEADORES",
+    "posologia": "40-160mg/dia em 2-3 doses",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Succinato de Metoprolol 25mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — BETABLOQUEADORES",
+    "posologia": "25-200mg/dia, 1x/dia",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Succinato de Metoprolol 50mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — BETABLOQUEADORES",
+    "posologia": "50-200mg/dia, 1x/dia",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Succinato de Metoprolol 100mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — BETABLOQUEADORES",
+    "posologia": "100-200mg/dia, 1x/dia",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Hidralazina 25mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — OUTROS",
+    "posologia": "25-75mg a cada 6-8h",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Hidralazina 50mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — OUTROS",
+    "posologia": "50-75mg a cada 6-8h",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Metildopa 250mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — OUTROS",
+    "posologia": "250-500mg a cada 8h (uso na gestação)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Doxazosina Mesilato 2mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — OUTROS",
+    "posologia": "1-16mg/dia, 1x/dia",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Hidroclorotiazida 25mg",
+    "classificacao": "DIURÉTICOS",
+    "posologia": "12,5-50mg/dia, 1x/dia (manhã)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Furosemida 40mg",
+    "classificacao": "DIURÉTICOS",
+    "posologia": "20-80mg/dia, 1-2x/dia",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Espironolactona 25mg",
+    "classificacao": "DIURÉTICOS",
+    "posologia": "25-100mg/dia, 1x/dia",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Espironolactona 100mg",
+    "classificacao": "DIURÉTICOS",
+    "posologia": "50-200mg/dia em 1-2 doses",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Cloridrato de Metformina 500mg",
+    "classificacao": "ANTIDIABÉTICOS",
+    "posologia": "500-2550mg/dia em 2-3 doses, com refeição",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Cloridrato de Metformina 850mg",
+    "classificacao": "ANTIDIABÉTICOS",
+    "posologia": "850-2550mg/dia em 2-3 doses, com refeição",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Glibenclamida 5mg",
+    "classificacao": "ANTIDIABÉTICOS",
+    "posologia": "2,5-20mg/dia em 1-2 doses, antes das refeições",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Glicazida 30mg",
+    "classificacao": "ANTIDIABÉTICOS",
+    "posologia": "30-120mg/dia, 1x/dia (manhã)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Glicazida 60mg",
+    "classificacao": "ANTIDIABÉTICOS",
+    "posologia": "60-120mg/dia, 1x/dia (manhã)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Sinvastatina 10mg",
+    "classificacao": "HIPOLIPEMIANTES (ESTATINAS)",
+    "posologia": "10-40mg/dia, 1x/dia (noite)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Sinvastatina 20mg",
+    "classificacao": "HIPOLIPEMIANTES (ESTATINAS)",
+    "posologia": "20-40mg/dia, 1x/dia (noite)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Sinvastatina 40mg",
+    "classificacao": "HIPOLIPEMIANTES (ESTATINAS)",
+    "posologia": "40mg/dia, 1x/dia (noite)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Rivaroxabana 5mg",
+    "classificacao": "ANTICOAGULANTES E ANTIAGREGANTES",
+    "posologia": "5-20mg/dia conforme indicação (FA, TVP, EP)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Rivaroxabana 10mg",
+    "classificacao": "ANTICOAGULANTES E ANTIAGREGANTES",
+    "posologia": "10mg/dia (profilaxia TVP) ou conforme indicação",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Rivaroxabana 20mg",
+    "classificacao": "ANTICOAGULANTES E ANTIAGREGANTES",
+    "posologia": "20mg/dia, 1x/dia (com jantar) — FA/TEV",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Varfarina 5mg",
+    "classificacao": "ANTICOAGULANTES E ANTIAGREGANTES",
+    "posologia": "Dose individualizada; manter INR 2-3 (uso geral)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Amiodarona 200mg",
+    "classificacao": "ANTIARRÍTMICOS E CARDIOTÔNICOS",
+    "posologia": "200-400mg/dia (manutenção); ataque: 600-800mg/dia por 1-3 sem.",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Digoxina 0,25mg",
+    "classificacao": "ANTIARRÍTMICOS E CARDIOTÔNICOS",
+    "posologia": "0,125-0,25mg/dia; dosar nível sérico",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Propafenona 300mg",
+    "classificacao": "ANTIARRÍTMICOS E CARDIOTÔNICOS",
+    "posologia": "150-300mg a cada 8h",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Isossorbida 20mg",
+    "classificacao": "ANTIARRÍTMICOS E CARDIOTÔNICOS",
+    "posologia": "20-40mg a cada 6-8h (excluir 6-8h/dia sem nitrato)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Isossorbida 40mg",
+    "classificacao": "ANTIARRÍTMICOS E CARDIOTÔNICOS",
+    "posologia": "40mg a cada 6-8h (excluir período sem nitrato)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Salbutamol 100mcg (inalador)",
+    "classificacao": "BRONCODILATADORES E ANTIASMÁTICOS",
+    "posologia": "1-2 jatos a cada 4-6h (resgate); espaçador recomendado",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Brometo de Ipratrópio 0,25mg/mL",
+    "classificacao": "BRONCODILATADORES E ANTIASMÁTICOS",
+    "posologia": "Nebulização: 250-500mcg a cada 6-8h",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Beclometasona 50mcg/dose",
+    "classificacao": "BRONCODILATADORES E ANTIASMÁTICOS",
+    "posologia": "100-400mcg/dia em 2-4 inalações (manutenção leve)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Beclometasona 250mcg/dose",
+    "classificacao": "BRONCODILATADORES E ANTIASMÁTICOS",
+    "posologia": "500-1000mcg/dia em 2 inalações (manutenção moderada-grave)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Budesonida 32mcg",
+    "classificacao": "BRONCODILATADORES E ANTIASMÁTICOS",
+    "posologia": "64-256mcg/dia em 1-2 inalações nasais (rinite)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Dexametasona 0,1mg/g creme",
+    "classificacao": "CORTICOSTEROIDES",
+    "posologia": "Aplicar fina camada 1-3x/dia (uso tópico)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Dexametasona 0,5mg/mL (solução)",
+    "classificacao": "CORTICOSTEROIDES",
+    "posologia": "0,5-9mg/dia em 2-4 doses (sistêmico)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Hidrocortisona creme",
+    "classificacao": "CORTICOSTEROIDES",
+    "posologia": "Aplicar 1-3x/dia em área afetada",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Prednisolona 1mg/mL",
+    "classificacao": "CORTICOSTEROIDES",
+    "posologia": "1-2mg/kg/dia (crianças); usar pela manhã",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Prednisolona 3mg/mL",
+    "classificacao": "CORTICOSTEROIDES",
+    "posologia": "1-2mg/kg/dia (crianças); usar pela manhã",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Prednisona 5mg",
+    "classificacao": "CORTICOSTEROIDES",
+    "posologia": "5-60mg/dia conforme indicação; manhã com alimento",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Prednisona 20mg",
+    "classificacao": "CORTICOSTEROIDES",
+    "posologia": "20-60mg/dia conforme indicação; manhã com alimento",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Omeprazol 20mg",
+    "classificacao": "ANTIÚLCERA / PROTETORES GÁSTRICOS",
+    "posologia": "20-40mg/dia, 30 min antes do café da manhã",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Hidróxido de Alumínio",
+    "classificacao": "ANTIÚLCERA / PROTETORES GÁSTRICOS",
+    "posologia": "5-10mL ou 1-2 cp a cada 4-6h, entre refeições",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Lactulose xarope 667mg/mL",
+    "classificacao": "LAXANTES E REGULADORES INTESTINAIS",
+    "posologia": "15-30mL/dia em 1-2 doses (adultos); ajustar",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Óleo Mineral",
+    "classificacao": "LAXANTES E REGULADORES INTESTINAIS",
+    "posologia": "15-45mL/dia; não usar em deitados ou crianças < 6 anos",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Dexclorfeniramina 2mg",
+    "classificacao": "ANTIHISTAMÍNICOS",
+    "posologia": "2mg a cada 4-6h (máx. 12mg/dia); causa sedação",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Dexclorfeniramina 0,4mg/mL",
+    "classificacao": "ANTIHISTAMÍNICOS",
+    "posologia": "2mg a cada 6-8h (adultos); 0,15mg/kg/dose (crianças)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Loratadina 10mg",
+    "classificacao": "ANTIHISTAMÍNICOS",
+    "posologia": "10mg/dia, 1x/dia (não sedativo)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Loratadina 1mg/mL xarope",
+    "classificacao": "ANTIHISTAMÍNICOS",
+    "posologia": "10mg/dia (adultos); 5mg/dia < 30kg (crianças)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Prometazina 25mg",
+    "classificacao": "ANTIHISTAMÍNICOS",
+    "posologia": "12,5-25mg a cada 8-12h; causa sedação intensa",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Brometo de Escopolamina 10mg",
+    "classificacao": "ANTIESPASMÓDICOS / ANTICOLINÉRGICOS",
+    "posologia": "10-20mg a cada 6-8h (espasmos GI/geniturinários)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Metoclopramida 10mg",
+    "classificacao": "ANTIEMÉTICOS",
+    "posologia": "10mg a cada 6-8h, 30 min antes das refeições",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Alopurinol 100mg",
+    "classificacao": "ANTI-GOTOSOS",
+    "posologia": "100-600mg/dia; iniciar com 100mg, ajustar conforme uricemia",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Alopurinol 300mg",
+    "classificacao": "ANTI-GOTOSOS",
+    "posologia": "300mg/dia (dose usual de manutenção); 1x/dia ou dividido",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Levotiroxina 25mcg",
+    "classificacao": "HORMÔNIOS TIREOIDIANOS",
+    "posologia": "25mcg/dia (dose inicial em idosos/cardiopatas); em jejum",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Levotiroxina 50mcg",
+    "classificacao": "HORMÔNIOS TIREOIDIANOS",
+    "posologia": "50mcg/dia; ajustar a cada 6-8 semanas pelo TSH",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Levotiroxina 75mcg",
+    "classificacao": "HORMÔNIOS TIREOIDIANOS",
+    "posologia": "75mcg/dia; ajustar conforme TSH",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Levotiroxina 100mcg",
+    "classificacao": "HORMÔNIOS TIREOIDIANOS",
+    "posologia": "100mcg/dia; ajustar conforme TSH",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Alendronato de Sódio 70mg",
+    "classificacao": "BIFOSFONATOS E SUPLEMENTOS ÓSSEOS",
+    "posologia": "70mg 1x/semana, em jejum, com copo cheio d'água; manter-se ereto 30 min",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Carbonato de Cálcio 500mg + Vitamina D 200UI",
+    "classificacao": "BIFOSFONATOS E SUPLEMENTOS ÓSSEOS",
+    "posologia": "1-2 cp/dia, com refeição",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Colecalciferol 7.000UI",
+    "classificacao": "BIFOSFONATOS E SUPLEMENTOS ÓSSEOS",
+    "posologia": "7.000UI/semana (manutenção/reposição leve)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Colecalciferol 50.000UI",
+    "classificacao": "BIFOSFONATOS E SUPLEMENTOS ÓSSEOS",
+    "posologia": "50.000UI/semana por 8-12 semanas (reposição de deficiência)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Levodopa + Benserazida 200+50mg",
+    "classificacao": "ANTIPARKINSONIANOS",
+    "posologia": "1 cp a cada 4-6h; ajustar; tomar 30 min antes das refeições",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Levodopa + Carbidopa 250+25mg",
+    "classificacao": "ANTIPARKINSONIANOS",
+    "posologia": "1 cp a cada 6-8h; ajustar conforme resposta",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Ácido Fólico 5mg",
+    "classificacao": "SUPLEMENTOS / VITAMINAS / MINERAIS",
+    "posologia": "5mg/dia (gestantes de risco, anemia megaloblástica)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Complexo B",
+    "classificacao": "SUPLEMENTOS / VITAMINAS / MINERAIS",
+    "posologia": "1 cp/dia ou conforme produto",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Sulfato Ferroso 40mg",
+    "classificacao": "SUPLEMENTOS / VITAMINAS / MINERAIS",
+    "posologia": "200mg de sulfato ferroso (40mg Fe elementar) 2-3x/dia em jejum",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Sulfato Ferroso gotas",
+    "classificacao": "SUPLEMENTOS / VITAMINAS / MINERAIS",
+    "posologia": "5mg Fe elementar/kg/dia em 3 doses (crianças)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Sais para Reidratação Oral",
+    "classificacao": "SUPLEMENTOS / VITAMINAS / MINERAIS",
+    "posologia": "200-400mL por evacuação líquida (adultos); 50-100mL/kg em 4h (crianças)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Aciclovir 200mg",
+    "classificacao": "ANTIVIRAIS",
+    "posologia": "200mg 5x/dia por 5-10 dias (herpes simples/zóster)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Aciclovir creme 50mg/g",
+    "classificacao": "ANTIVIRAIS",
+    "posologia": "Aplicar 5x/dia por 4-5 dias (herpes labial)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Amoxicilina 500mg",
+    "classificacao": "ANTIBIÓTICOS — PENICILINAS",
+    "posologia": "500mg a cada 8h ou 875mg a cada 12h por 7-10 dias",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Amoxicilina 250mg/5mL",
+    "classificacao": "ANTIBIÓTICOS — PENICILINAS",
+    "posologia": "25-50mg/kg/dia dividido a cada 8h (crianças)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Amoxicilina + Clavulanato 500+125mg",
+    "classificacao": "ANTIBIÓTICOS — PENICILINAS",
+    "posologia": "1 cp a cada 8h ou 12h (7-10 dias); com alimento",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Amoxicilina + Clavulanato 250mg+5mL",
+    "classificacao": "ANTIBIÓTICOS — PENICILINAS",
+    "posologia": "25-45mg/kg/dia dividido a cada 8-12h (crianças)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Benzilpenicilina 1.200.000UI (Benzatina)",
+    "classificacao": "ANTIBIÓTICOS — PENICILINAS",
+    "posologia": "1.200.000UI IM dose única (faringite estrepto grupo A / sífilis primária)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Benzilpenicilina 600.000UI",
+    "classificacao": "ANTIBIÓTICOS — PENICILINAS",
+    "posologia": "600.000UI IM (crianças < 27kg); dose única",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Cefalexina 500mg cp",
+    "classificacao": "ANTIBIÓTICOS — CEFALOSPORINAS",
+    "posologia": "500mg a cada 6h por 7-10 dias",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Cefalexina 50mg/mL",
+    "classificacao": "ANTIBIÓTICOS — CEFALOSPORINAS",
+    "posologia": "25-50mg/kg/dia dividido a cada 6h (crianças)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Azitromicina 500mg",
+    "classificacao": "ANTIBIÓTICOS — MACROLÍDEOS",
+    "posologia": "500mg/dia por 3-5 dias (dose única diária)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Azitromicina 200mg/5mL",
+    "classificacao": "ANTIBIÓTICOS — MACROLÍDEOS",
+    "posologia": "10mg/kg/dia por 3-5 dias (crianças)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Claritromicina 250mg/5mL",
+    "classificacao": "ANTIBIÓTICOS — MACROLÍDEOS",
+    "posologia": "7,5mg/kg a cada 12h (crianças, máx. 500mg/dose)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Ciprofloxacino 500mg",
+    "classificacao": "ANTIBIÓTICOS — QUINOLONAS",
+    "posologia": "500mg a cada 12h por 7-14 dias (UTI: 7 dias)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Metronidazol 250mg",
+    "classificacao": "ANTIBIÓTICOS / ANTIPROTOZOÁRIOS — NITROIMIDAZÓIS",
+    "posologia": "250mg a cada 8h por 7 dias (giardíase, tricomoníase)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Metronidazol 400mg",
+    "classificacao": "ANTIBIÓTICOS / ANTIPROTOZOÁRIOS — NITROIMIDAZÓIS",
+    "posologia": "400mg a cada 8h (anaeróbios); 2g dose única (tricomoníase)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Metronidazol creme vaginal",
+    "classificacao": "ANTIBIÓTICOS / ANTIPROTOZOÁRIOS — NITROIMIDAZÓIS",
+    "posologia": "Aplicar 1 aplicador vaginal/noite por 5-7 noites",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Sulfametoxazol + Trimetoprima 400+80mg",
+    "classificacao": "ANTIBIÓTICOS — SULFONAMIDAS / ASSOCIAÇÕES",
+    "posologia": "1 cp a cada 12h por 7-14 dias (ITU)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Sulfametoxazol + Trimetoprima 200+40/5mL",
+    "classificacao": "ANTIBIÓTICOS — SULFONAMIDAS / ASSOCIAÇÕES",
+    "posologia": "4-6mg/kg de TMP a cada 12h (crianças)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Nitrofurantoína 100mg",
+    "classificacao": "ANTIBIÓTICOS — NITROFURANOS",
+    "posologia": "100mg a cada 6h por 7 dias (ITU baixa)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Fluconazol 150mg",
+    "classificacao": "ANTIFÚNGICOS",
+    "posologia": "150mg dose única (candidíase vaginal); 100-400mg/dia (outras)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Miconazol creme",
+    "classificacao": "ANTIFÚNGICOS",
+    "posologia": "Aplicar 2x/dia por 2-4 semanas (tinea) ou 7 dias (vaginal)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Nistatina suspensão",
+    "classificacao": "ANTIFÚNGICOS",
+    "posologia": "1-2mL (100.000-200.000UI) 4x/dia após refeições (candidíase oral)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Albendazol 400mg cp",
+    "classificacao": "ANTIPARASITÁRIOS / ANTIELMÍNTICOS",
+    "posologia": "400mg dose única (helmintos intestinais)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Albendazol gotas 40mg/mL",
+    "classificacao": "ANTIPARASITÁRIOS / ANTIELMÍNTICOS",
+    "posologia": "200mg (5mL) dose única < 2 anos; 400mg ≥ 2 anos",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Ivermectina 6mg",
+    "classificacao": "ANTIPARASITÁRIOS / ANTIELMÍNTICOS",
+    "posologia": "0,2mg/kg/dose única (estrongiloidíase, escabiose)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Permetrina 5%",
+    "classificacao": "ANTIESCABIÓTICOS / PEDICULICIDAS",
+    "posologia": "Aplicar no corpo (noite), lavar após 8-14h; repetir em 7 dias",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Acetilcisteína xarope 20mg/mL",
+    "classificacao": "MUCOLÍTICOS / EXPECTORANTES",
+    "posologia": "200mg (10mL) a cada 8h (adultos); 100mg 2-3x/dia (crianças)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Cloreto de Sódio 0,9% spray nasal",
+    "classificacao": "DESCONGESTIONANTES / HIGIENE NASAL",
+    "posologia": "1-3 jatos em cada narina, 2-6x/dia (higiene nasal)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Norestin cp (Noretisterona 0,35mg)",
+    "classificacao": "ANTICONCEPCIONAIS HORMONAIS",
+    "posologia": "1 cp/dia continuamente, mesma hora (minipílula)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Ciclo 21 cp (Etinilestradiol + Levonorgestrel)",
+    "classificacao": "ANTICONCEPCIONAIS HORMONAIS",
+    "posologia": "1 cp/dia por 21 dias → 7 dias de pausa",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Depo-Provera inj. (Acetato de Medroxiprogesterona 150mg)",
+    "classificacao": "ANTICONCEPCIONAIS HORMONAIS",
+    "posologia": "150mg IM a cada 3 meses",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Mesigyna inj. (Noretisterona 50mg + Estradiol 5mg)",
+    "classificacao": "ANTICONCEPCIONAIS HORMONAIS",
+    "posologia": "1 ampola IM/mês (ciclos de 28-30 dias)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Cyclofemina inj. (Medroxiprogesterona 25mg + Cipionato de Estradiol 5mg)",
+    "classificacao": "ANTICONCEPCIONAIS HORMONAIS",
+    "posologia": "1 ampola IM/mês",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Acetato de Medroxiprogesterona 25mg + Cipionato de Estradiol 5mg",
+    "classificacao": "ANTICONCEPCIONAIS HORMONAIS",
+    "posologia": "1 ampola IM/mês",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Amitriptilina 25mg",
+    "classificacao": "PSICOFÁRMACOS — ANTIDEPRESSIVOS",
+    "posologia": "25-150mg/dia; iniciar com 25mg à noite; ajustar gradualmente",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Amitriptilina 75mg",
+    "classificacao": "PSICOFÁRMACOS — ANTIDEPRESSIVOS",
+    "posologia": "75-150mg/dia à noite; dose de manutenção",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Clomipramina 10mg",
+    "classificacao": "PSICOFÁRMACOS — ANTIDEPRESSIVOS",
+    "posologia": "10-250mg/dia; iniciar com 10-25mg; dose única noturna ou dividida",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Clomipramina 25mg",
+    "classificacao": "PSICOFÁRMACOS — ANTIDEPRESSIVOS",
+    "posologia": "25-250mg/dia; dose habitual 100-150mg/dia",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Fluoxetina 20mg",
+    "classificacao": "PSICOFÁRMACOS — ANTIDEPRESSIVOS",
+    "posologia": "20-60mg/dia, 1x/dia (manhã); início 20mg/dia",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Nortriptilina 25mg",
+    "classificacao": "PSICOFÁRMACOS — ANTIDEPRESSIVOS",
+    "posologia": "25-150mg/dia; iniciar com 25mg; preferir dose noturna",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Nortriptilina 50mg",
+    "classificacao": "PSICOFÁRMACOS — ANTIDEPRESSIVOS",
+    "posologia": "50-150mg/dia; dose de manutenção",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Clorpromazina 25mg",
+    "classificacao": "PSICOFÁRMACOS — ANTIPSICÓTICOS",
+    "posologia": "25-300mg/dia em 2-4 doses; iniciar com dose baixa",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Clorpromazina 100mg",
+    "classificacao": "PSICOFÁRMACOS — ANTIPSICÓTICOS",
+    "posologia": "100-600mg/dia em doses divididas (esquizofrenia)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Haloperidol 1mg",
+    "classificacao": "PSICOFÁRMACOS — ANTIPSICÓTICOS",
+    "posologia": "1-20mg/dia em 2-3 doses; ajustar conforme resposta",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Haloperidol 5mg",
+    "classificacao": "PSICOFÁRMACOS — ANTIPSICÓTICOS",
+    "posologia": "5-20mg/dia em 2-3 doses",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Decanoato de Haloperidol 50mg/mL",
+    "classificacao": "PSICOFÁRMACOS — ANTIPSICÓTICOS",
+    "posologia": "50-200mg IM a cada 4 semanas (depósito)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Carbonato de Lítio 300mg",
+    "classificacao": "PSICOFÁRMACOS — ESTABILIZADORES DO HUMOR",
+    "posologia": "300-1200mg/dia em 2-3 doses; monitorar litemia (0,6-1,2 mEq/L)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Ácido Valproico 250mg",
+    "classificacao": "PSICOFÁRMACOS — ESTABILIZADORES DO HUMOR",
+    "posologia": "250-1500mg/dia em 2-3 doses; ajustar por nível sérico",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Ácido Valproico 500mg",
+    "classificacao": "PSICOFÁRMACOS — ESTABILIZADORES DO HUMOR",
+    "posologia": "500-1500mg/dia em 2-3 doses",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Valproato de Sódio 50mg/mL",
+    "classificacao": "PSICOFÁRMACOS — ESTABILIZADORES DO HUMOR",
+    "posologia": "Dose conforme peso e indicação; monitorar nível sérico",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Carbamazepina 200mg",
+    "classificacao": "PSICOFÁRMACOS — ANTICONVULSIVANTES / ANTIEPILÉPTICOS",
+    "posologia": "200-1200mg/dia em 2-3 doses; iniciar com 100-200mg/dia",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Carbamazepina 400mg",
+    "classificacao": "PSICOFÁRMACOS — ANTICONVULSIVANTES / ANTIEPILÉPTICOS",
+    "posologia": "400-1200mg/dia em 2-3 doses (dose de manutenção)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Carbamazepina 20mg/mL",
+    "classificacao": "PSICOFÁRMACOS — ANTICONVULSIVANTES / ANTIEPILÉPTICOS",
+    "posologia": "Dose conforme peso/idade; crianças: 10-20mg/kg/dia em 2-3 doses",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Clonazepam 2mg",
+    "classificacao": "PSICOFÁRMACOS — ANTICONVULSIVANTES / ANTIEPILÉPTICOS",
+    "posologia": "0,5-20mg/dia em 2-3 doses; início com 0,5-1mg",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Clonazepam gotas 2,5mg/mL",
+    "classificacao": "PSICOFÁRMACOS — ANTICONVULSIVANTES / ANTIEPILÉPTICOS",
+    "posologia": "0,1mg/kg/dia dividido (crianças); adultos iniciar 0,5-1mg/dia",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Fenobarbital 100mg",
+    "classificacao": "PSICOFÁRMACOS — ANTICONVULSIVANTES / ANTIEPILÉPTICOS",
+    "posologia": "1-3mg/kg/dia em 1-2 doses; adultos 60-180mg/dia",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Fenobarbital 40mg/mL",
+    "classificacao": "PSICOFÁRMACOS — ANTICONVULSIVANTES / ANTIEPILÉPTICOS",
+    "posologia": "Dose conforme peso; crianças: 3-5mg/kg/dia",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Fenitoína 100mg",
+    "classificacao": "PSICOFÁRMACOS — ANTICONVULSIVANTES / ANTIEPILÉPTICOS",
+    "posologia": "4-7mg/kg/dia em 1-3 doses; monitorar nível sérico (10-20mcg/mL)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Diazepam 10mg",
+    "classificacao": "PSICOFÁRMACOS — ANSIOLÍTICOS / BENZODIAZEPÍNICOS",
+    "posologia": "2-10mg a cada 6-12h (ansiedade/espasmo muscular); uso curto prazo",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Biperideno 2mg",
+    "classificacao": "PSICOFÁRMACOS — ANTIPARKINSONIANOS (USO EM PSIQUIATRIA)",
+    "posologia": "2-8mg/dia em 3-4 doses (controle de efeitos extrapiramidais)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Paracetamol 750mg",
+    "classificacao": "ANALGÉSICOS E ANTIPIRÉTICOS",
+    "posologia": "750mg a cada 6-8h (máx. 4g/dia)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Doxazosina Mesilato 4mg",
+    "classificacao": "ANTI-HIPERTENSIVOS — OUTROS",
+    "posologia": "4-16mg/dia, 1x/dia",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Budesonida 50mcg",
+    "classificacao": "BRONCODILATADORES E ANTIASMÁTICOS",
+    "posologia": "100-400mcg/dia em 1-2 inalações (manutenção asma/DPOC)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Acebrofilina 50mg/5mL",
+    "classificacao": "BRONCODILATADORES E ANTIASMÁTICOS",
+    "posologia": "5mL 2-3x/dia (adultos e crianças > 12 anos); mucolítico broncodilatador",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Desloratadina 0,5mg/mL",
+    "classificacao": "ANTIHISTAMÍNICOS",
+    "posologia": "10mL/dia (adultos e > 12 anos); 5mL/dia (6-11 anos); não sedativo",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Ondansetrona 8mg",
+    "classificacao": "ANTIEMÉTICOS",
+    "posologia": "8mg a cada 8-12h; 30 min antes da quimioterapia ou conforme náusea",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Amoxicilina 875mg",
+    "classificacao": "ANTIBIÓTICOS — PENICILINAS",
+    "posologia": "875mg a cada 12h por 7-10 dias",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Nistatina + Óxido de Zinco pomada",
+    "classificacao": "ANTIFÚNGICOS",
+    "posologia": "Aplicar na área afetada (fraldas/candidíase cutânea) 2-4x/dia após higiene",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Cloridrato de Ambroxol 30mg/5mL",
+    "classificacao": "MUCOLÍTICOS / EXPECTORANTES",
+    "posologia": "30mg (5mL) 2-3x/dia (adultos); 15mg 2-3x/dia (crianças 2-6 anos)",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Finasterida 5mg",
+    "classificacao": "UROPATIA OBSTRUTIVA / PRÓSTATA",
+    "posologia": "5mg/dia, 1x/dia (HPB); efeito pleno em 6-12 meses",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Propafenona 150mg",
+    "classificacao": "ANTIARRÍTMICOS E CARDIOTÔNICOS",
+    "posologia": "150mg a cada 8h (dose inicial); ajustar conforme resposta",
+    "indicacao": "",
+    "status": "Disponível"
+  },
+  {
+    "nome": "Ferropolimaltose 100mg",
+    "classificacao": "SUPLEMENTOS / VITAMINAS / MINERAIS",
+    "posologia": "1 cp/dia (reposição de ferro; melhor tolerância GI que sulfato ferroso)",
+    "indicacao": "",
+    "status": "Disponível"
+  }
+]
