@@ -295,12 +295,15 @@ def admin_dashboard():
         ORDER BY total DESC
     """).fetchall()
     
+    classifications = db.execute("SELECT DISTINCT classificacao FROM medicamentos ORDER BY classificacao ASC").fetchall()
+    
     return render_template('admin_dashboard.html', 
                           total=total, 
                           disponiveis=disponiveis, 
                           atencao=atencao, 
                           popular=popular,
-                          classes=classes_query)
+                          classes=classes_query,
+                          classifications=classifications)
 
 # ROTA: Admin Medicamentos (HTML View)
 @app.route('/admin/medicamentos')

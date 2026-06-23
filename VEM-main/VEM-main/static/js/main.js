@@ -144,10 +144,16 @@ function initCadastrarModal() {
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
+        let baseStatus = document.getElementById('cad-status').value;
+        const isPopular = document.getElementById('cad-popular') && document.getElementById('cad-popular').checked;
+        if (isPopular) {
+            baseStatus += ", Farmácia Popular";
+        }
+
         const payload = {
             nome: document.getElementById('cad-nome').value.trim(),
             classificacao: document.getElementById('cad-classificacao').value.trim(),
-            status: document.getElementById('cad-status').value
+            status: baseStatus
         };
         fetch('/api/cadastrar_medicamento', {
             method: 'POST',
