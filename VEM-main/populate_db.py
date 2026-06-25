@@ -109,12 +109,12 @@ def init_db():
     cursor.execute("""
     INSERT INTO usuarios (username, password_hash, role, nome_completo, cidade)
     VALUES (?, ?, ?, ?, ?);
-    """, ("consultor", viewer_pw_hash, "viewer", "Consultor", "Itamonte"))
+    """, ("Itamonte", viewer_pw_hash, "viewer", "Itamonte", "Itamonte"))
     
     conn.commit()
     print("Default users created:")
     print("  - admin: Claralimabarboza / farmacia@2026!")
-    print("  - viewer: consultor / consulta123 (Nome: Consultor)")
+    print("  - viewer: Itamonte / consulta123 (Nome: Itamonte)")
     # 9. Load and insert standard medications
     meds_file = os.path.join(DATA_DIR, "medicamentos.json")
     if os.path.exists(meds_file):

@@ -110,9 +110,9 @@
 
 {% block scripts %}
 <script>
-    document.getElementById('nav-estrategicos').classList.add('active');
+    const navEstrategicos = document.getElementById('nav-estrategicos');
+    if (navEstrategicos) navEstrategicos.classList.add('active');
 
-    // Função para Enviar o PDF Diretamente para a Impressora
     function printOseltamivirForm() {
         const pdfUrl = "{{ url_for('static', filename='formulario para dispensacao oseltamivir.pdf') }}";
 

@@ -116,6 +116,7 @@
 
 {% block scripts %}
 <script>
-    document.getElementById('nav-home').classList.add('active');
+    const navHome = document.getElementById('nav-home');
+    if (navHome) navHome.classList.add('active');
 </script>
 {% endblock %}

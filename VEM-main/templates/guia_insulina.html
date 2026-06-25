@@ -331,7 +331,8 @@
 
 {% block scripts %}
 <script>
-    document.getElementById('nav-insulina').classList.add('active');
+    const navInsulina = document.getElementById('nav-insulina');
+    if (navInsulina) navInsulina.classList.add('active');
 
     // Função de alternância dinâmica de abas
     function alternarAba(tipo) {

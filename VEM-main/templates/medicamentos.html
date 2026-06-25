@@ -64,7 +64,16 @@
             <option value="Indisponível">Indisponível</option>
         </select>
     </div>
+
+    <!-- Indicador Ao Vivo -->
+    <div style="display: flex; align-items: center; gap: 0.4rem; padding: 0 0.5rem; white-space: nowrap;"
+        title="Status atualizado automaticamente a cada 15 segundos">
+        <span id="live-dot"
+            style="width: 8px; height: 8px; border-radius: 50%; background: #10b981; display: inline-block; animation: pulse-dot 1.5s ease-in-out infinite;"></span>
+        <span style="font-size: 0.78rem; color: #64748b; font-weight: 600;">Ao Vivo</span>
+    </div>
 </div>
+
 
 <div id="meds-container">
     {% for class_name, items in medicamentos|groupby('classificacao') %}
@@ -110,7 +119,7 @@
                 </div>
 
                 <div style="margin-top: auto; padding-top: 0.5rem;">
-                    <div style="display: inline-flex; gap: 0.35rem; flex-wrap: wrap;">
+                    <div class="badges-container" style="display: inline-flex; gap: 0.35rem; flex-wrap: wrap;">
                         {% set status_list = m.status.split(',') if m.status else [] %}
                         {% for status_item in status_list %}
                         {% set s = status_item.strip() %}
@@ -120,8 +129,7 @@
                             {% elif s == 'Estoque baixo' %}status-baixo
                             {% elif s == 'Aguardando entrega' %}status-aguardando
                             {% elif s == 'Farmácia Popular' %}status-farmacia-popular
-                            {% endif %}"
-                            style="display: inline-flex; align-items: center; gap: 0.3rem;">
+                            {% endif %}" style="display: inline-flex; align-items: center; gap: 0.3rem;">
                             {% if s == 'Disponível' %}
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" width="12" height="12">
@@ -252,8 +260,10 @@
             </select>
         </div>
 
-        <div class="form-group" style="display: flex; align-items: center; justify-content: space-between; background: #f8fafc; padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; border: 1px solid #e2e8f0;">
-            <label for="cad-popular" style="margin: 0; font-weight: 600; cursor: pointer; color: #1e293b;">Farmácia Popular</label>
+        <div class="form-group"
+            style="display: flex; align-items: center; justify-content: space-between; background: #f8fafc; padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; border: 1px solid #e2e8f0;">
+            <label for="cad-popular" style="margin: 0; font-weight: 600; cursor: pointer; color: #1e293b;">Farmácia
+                Popular</label>
             <label style="position: relative; display: inline-block; width: 44px; height: 24px; cursor: pointer;">
                 <input type="checkbox" id="cad-popular" style="opacity: 0; width: 0; height: 0;" onchange="
                     if(this.checked) {
@@ -264,8 +274,10 @@
                         this.nextElementSibling.nextElementSibling.style.transform = 'translateX(0)';
                     }
                 ">
-                <span style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #e2e8f0; transition: .3s; border-radius: 24px; pointer-events: none;"></span>
-                <span style="position: absolute; height: 18px; width: 18px; left: 3px; bottom: 3px; background-color: white; transition: .3s; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.3); pointer-events: none;"></span>
+                <span
+                    style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #e2e8f0; transition: .3s; border-radius: 24px; pointer-events: none;"></span>
+                <span
+                    style="position: absolute; height: 18px; width: 18px; left: 3px; bottom: 3px; background-color: white; transition: .3s; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.3); pointer-events: none;"></span>
             </label>
         </div>
 
@@ -280,39 +292,107 @@
 
 {% block scripts %}
 <script>
-    document.getElementById('nav-meds').classList.add('active');
+    const navMeds = document.getElementById('nav-meds');
+    if (navMeds) navMeds.classList.add('active');
 
-    // Sincronização dos Radios para o select invisível
-    {% if session.get('nome_completo') == 'Ana Clara Lima Barboza' %}
-    const selectOculto = document.getElementById('novo-status');
-    const formStatus = document.getElementById('edit-status-form');
+    // ─── Mapa de classes CSS por status ───────────────────────────────────────
+    const STATUS_CLASS = {
+        'Disponível': 'status-disponivel',
+        'Indisponível': 'status-indisponivel',
+        'Estoque baixo': 'status-baixo',
+        'Aguardando entrega': 'status-aguardando',
+        'Farmácia Popular': 'status-farmacia-popular'
+    };
 
-    // 1. Quando o usuário clica em um Radio, atualiza o select oculto
-    formStatus.addEventListener('change', (e) => {
-        if (e.target.name === 'novo_status' && selectOculto) {
-            selectOculto.value = e.target.value;
-        }
-    });
+    // ─── Renderiza badges de status num card ─────────────────────────────────
+    function renderBadges(statusStr) {
+        const parts = statusStr ? statusStr.split(',') : [];
+        return parts.map(s => {
+            s = s.trim();
+            const cls = STATUS_CLASS[s] || '';
+            const icon = s === 'Disponível'
+                ? `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>`
+                : `<span style="width:6px;height:6px;border-radius:50%;background-color:currentColor;"></span>`;
+            return `<span class="badge-status ${cls}" style="display:inline-flex;align-items:center;gap:0.3rem;">${icon}${s}</span>`;
+        }).join('');
+    }
 
-    // 2. Quando o script antigo abrir o modal e injetar o valor atual no select, 
-    // nós escutamos essa mudança e marcamos o botão Radio correspondente na tela.
-    if (selectOculto) {
-        // Criamos um observador para quando o script antigo mudar o .value diretamente
-        const atualizarRadiosPeloSelect = () => {
-            const valorAtual = selectOculto.value;
-            const radioCorrespondente = formStatus.querySelector(`input[name="novo_status"][value="${valorAtual}"]`);
-            if (radioCorrespondente) {
-                radioCorrespondente.checked = true;
+    // ─── Polling: atualiza badges sem recarregar a página ────────────────────
+    let lastHash = null; // detecta mudanças reais
+
+    function pollStatuses() {
+        fetch('/api/medicamentos')
+            .then(r => r.json())
+            .then(data => {
+                if (!data.success) return;
+
+                const meds = data.data;
+                // Gera hash simples para comparar se algo mudou
+                const hash = meds.map(m => m.id + ':' + m.status).join('|');
+                if (hash === lastHash) return; // nada mudou
+                lastHash = hash;
+
+                meds.forEach(med => {
+                    const card = document.querySelector(`.med-card[data-id="${med.id}"]`);
+                    if (!card) return;
+
+                    const currentStatus = card.dataset.status;
+                    if (currentStatus === med.status) return; // este card não mudou
+
+                    // Atualiza atributos de dados (usados pelo filtro JS)
+                    card.dataset.status = med.status;
+
+                    // Atualiza o botão de edição (admin) com o novo status
+                    const editBtn = card.querySelector('.btn-edit-status');
+                    if (editBtn) editBtn.dataset.status = med.status;
+
+                    // Substitui apenas a div dos badges
+                    const badgesContainer = card.querySelector('.badges-container');
+                    if (badgesContainer) {
+                        badgesContainer.innerHTML = renderBadges(med.status);
+                    }
+
+                    // Pisca o card para sinalizar atualização
+                    card.style.transition = 'box-shadow 0.3s, border-color 0.3s';
+                    card.style.boxShadow = '0 0 0 2px #10b981';
+                    card.style.borderColor = '#10b981';
+                    setT    // Inicia o polling a cada 15 segundos
+    setInterval(pollStatuses, 15000);
+
+</script>
+
+{# Exporta flag de admin como variável JS — sem Jinja2 dentro do bloco <script> #}
+<script>var IS_ADMIN = {{ ('true' if session.get('nome_completo') == 'Ana Clara Lima Barboza' else 'false') }};</script>
+
+<script>
+    // ─── Sincronização dos Radios para o select invisível (admin) ────────────
+    if (IS_ADMIN) {
+        const selectOculto = document.getElementById('novo-status');
+        const formStatus = document.getElementById('edit-status-form');
+
+        formStatus.addEventListener('change', (e) => {
+            if (e.target.name === 'novo_status' && selectOculto) {
+                selectOculto.value = e.target.value;
             }
-        };
+        });
 
-        // Escuta mudanças manuais/eventos e também roda logo de início com delay curto ao clicar em editar
-        selectOculto.addEventListener('change', atualizarRadiosPeloSelect);
-
-        document.querySelectorAll('.btn-edit-status').forEach(btn => {
-            btn.addEventListener('click', () => {
-                setTimeout(atualizarRadiosPeloSelect, 50);
+        if (selectOculto) {
+            const atualizarRadiosPeloSelect = () => {
+                const valorAtual = selectOculto.value;
+                const radioCorrespondente = formStatus.querySelector(`input[name="novo_status"][value="${valorAtual}"]`);
+                if (radioCorrespondente) radioCorrespondente.checked = true;
+            };
+            selectOculto.addEventListener('change', atualizarRadiosPeloSelect);
+            document.querySelectorAll('.btn-edit-status').forEach(btn => {
+                btn.addEventListener('click', () => setTimeout(atualizarRadiosPeloSelect, 50));
             });
+        }
+    }
+</script>
+{% endblock %}
+electOculto.addEventListener('change', atualizarRadiosPeloSelect);
+        document.querySelectorAll('.btn-edit-status').forEach(btn => {
+            btn.addEventListener('click', () => setTimeout(atualizarRadiosPeloSelect, 50));
         });
     }
     {% endif %}

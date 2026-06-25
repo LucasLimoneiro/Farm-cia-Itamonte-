@@ -275,7 +275,8 @@
 
 {% block scripts %}
 <script>
-    document.getElementById('nav-admin').classList.add('active');
+    const navAdmin = document.getElementById('nav-admin');
+    if (navAdmin) navAdmin.classList.add('active');
 
     const searchInput = document.getElementById('search-input');
     const classFilter = document.getElementById('classification-filter');

@@ -130,6 +130,7 @@
 
 {% block scripts %}
 <script>
-    document.getElementById('nav-glicose').classList.add('active');
+    const navGlicose = document.getElementById('nav-glicose');
+    if (navGlicose) navGlicose.classList.add('active');
 </script>
 {% endblock %}

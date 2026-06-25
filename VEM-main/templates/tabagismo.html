@@ -162,6 +162,7 @@
 
 {% block scripts %}
 <script>
-    document.getElementById('nav-tabagismo').classList.add('active');
+    const navTabagismo = document.getElementById('nav-tabagismo');
+    if (navTabagismo) navTabagismo.classList.add('active');
 </script>
 {% endblock %}
