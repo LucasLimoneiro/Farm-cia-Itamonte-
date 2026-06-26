@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia Municipal - {% block title %}Portal{% endblock %}</title>
+    <!-- Local CSS: offline-first, no external CDNs -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Responsive Navbar -->
+    <nav class="navbar" id="main-nav">
+        <div class="nav-brand">
+            <a href="{{ url_for('index') }}" class="nav-logo">
+                <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" style="height: 40px; width: auto;">
+            </a>
+            <div class="nav-title">
+                <span class="nav-title-main">Farmácia Municipal</span>
+                <span class="nav-title-sub">Portal de Medicamentos</span>
+            </div>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="javascript:history.back()" id="nav-voltar">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Voltar
+            </a></li>
+            
+            {% if session.get('nome_completo') == 'Ana Clara Lima Barboza' %}
+            <li><a href="{{ url_for('admin_dashboard') }}" id="nav-admin">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                Admin
+            </a></li>
+            {% endif %}
+        </ul>
+        
+        <div class="user-badge-container">
+            <span class="user-name-simple">{{ session.get('nome_completo') }}</span>
+            <a href="{{ url_for('logout') }}" class="btn-logout-icon" title="Sair">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Local JS: offline-first -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

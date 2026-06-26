@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% block title %}Painel Principal{% endblock %}
+
+{% block content %}
+<div class="glass-card" style="margin-bottom: 2.5rem; padding: 3rem 2rem; display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo Farmácia" style="height: 150px; max-width: 100%; object-fit: contain;">
+    <div style="text-align: left; max-width: 700px;">
+        <h1 style="color: var(--primary); font-size: 2.25rem; margin-bottom: 0.75rem; font-weight: 800;">
+            Bem-vindo ao Portal de Medicamentos
+        </h1>
+        <p style="color: var(--text-secondary); font-size: 1.1rem; margin: 0; line-height: 1.6;">
+            Plataforma de consulta rápida de estoque e manuais técnicos para os profissionais de saúde.
+        </p>
+    </div>
+</div>
+
+<div class="dashboard-grid">
+    <!-- Medicamentos Card -->
+    <a href="{{ url_for('medicamentos_view') }}" class="card-pastel">
+        <div class="card-pastel-body bg-pastel-green">
+            <div class="card-pastel-icon text-green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5l-6-6a4.5 4.5 0 0 1 6.5-6.5l6 6a4.5 4.5 0 0 1-6.5 6.5z"></path><line x1="14" y1="9.5" x2="9.5" y2="14"></line></svg>
+            </div>
+            <div class="card-pastel-title">Medicamentos</div>
+            <div class="card-pastel-desc">
+                Consulte todos os medicamentos disponíveis na farmácia, com posologia, classificação e disponibilidade.
+            </div>
+        </div>
+        <div class="card-pastel-footer">
+            Acessar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </div>
+    </a>
+
+    <!-- Guia de Insulina Card -->
+    <a href="{{ url_for('guia_insulina') }}" class="card-pastel">
+        <div class="card-pastel-body bg-pastel-blue">
+            <div class="card-pastel-icon text-blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+            </div>
+            <div class="card-pastel-title">Guia Prático de Insulina</div>
+            <div class="card-pastel-desc">
+                Como utilizar insulina NPH e Regular — frasco e caneta reutilizável, agulhas e orientações educativas.
+            </div>
+        </div>
+        <div class="card-pastel-footer">
+            Acessar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </div>
+    </a>
+
+    <!-- Monitor de Glicose Card -->
+    <a href="{{ url_for('monitor_glicose') }}" class="card-pastel">
+        <div class="card-pastel-body bg-pastel-purple">
+            <div class="card-pastel-icon text-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            </div>
+            <div class="card-pastel-title">Monitor de Glicose</div>
+            <div class="card-pastel-desc">
+                Saiba como conseguir o monitor, tiras reagentes e as quantidades por tipo de diabetes.
+            </div>
+        </div>
+        <div class="card-pastel-footer">
+            Acessar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </div>
+    </a>
+
+    <!-- Alto Custo Card -->
+    <a href="{{ url_for('alto_custo') }}" class="card-pastel">
+        <div class="card-pastel-body bg-pastel-indigo">
+            <div class="card-pastel-icon text-indigo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="card-pastel-title">Medicamentos de Alto Custo</div>
+            <div class="card-pastel-desc">
+                Medicamentos do CEAF fornecidos pelo Governo de Minas. Consulte doenças contempladas e formulários de solicitação.
+            </div>
+        </div>
+        <div class="card-pastel-footer">
+            Acessar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </div>
+    </a>
+
+    <!-- Estratégicos Card -->
+    <a href="{{ url_for('estrategicos') }}" class="card-pastel">
+        <div class="card-pastel-body bg-pastel-orange">
+            <div class="card-pastel-icon text-orange">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+            </div>
+            <div class="card-pastel-title">Medicamentos Estratégicos</div>
+            <div class="card-pastel-desc">
+                Hanseníase, Tuberculose, Influenza (Oseltamivir), Chagas, Parasitoses e outros programas estratégicos do SUS.
+            </div>
+        </div>
+        <div class="card-pastel-footer">
+            Acessar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </div>
+    </a>
+
+    <!-- Tabagismo Card -->
+    <a href="{{ url_for('tabagismo') }}" class="card-pastel">
+        <div class="card-pastel-body bg-pastel-cyan">
+            <div class="card-pastel-icon text-cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
+            </div>
+            <div class="card-pastel-title">Cessação do Tabagismo</div>
+            <div class="card-pastel-desc">
+                Adesivos de nicotina 7mg, 14mg e 21mg, goma Nicorette e Bupropiona 150mg disponíveis na farmácia.
+            </div>
+        </div>
+        <div class="card-pastel-footer">
+            Acessar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </div>
+    </a>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    const navHome = document.getElementById('nav-home');
+    if (navHome) navHome.classList.add('active');
+</script>
+{% endblock %}
